@@ -1,0 +1,71 @@
+:root {
+    /* // Palletes */
+
+    --light-theme-bg-color: #FFFEFA;
+    --light-theme-shade-faded: #EAF8F7;
+    --light-theme-shade-0: #548A91;
+    --light-theme-shade-1: #30626B;
+    --light-theme-shade-2: #1A424C;
+    --light-theme-font-color: #4B4F52;
+    --light-theme-font-color-light: #6F7274;
+    --light-theme-font-color-contrast: #1A2933;
+    --light-theme-border-color-light: #D6D5D0;
+    --light-theme-border-color-dark: #ADACA7;
+    --light-theme-primary-color: #30626B;
+    --light-theme-primary-color-contrast: #FFFEFA;
+    --light-theme-primary-color-faded: #98B0B2;
+    --light-theme-secondary-color: #CF451A;
+    --light-theme-control-bg-color: #EBE9E5;
+    --light-theme-control-bg-color-focus: #FFFFFF;
+    --light-theme-control-border-color-light: #D6D5D0;
+    --light-theme-control-border-color-dark: #ADACA7;
+    --light-theme-control-shadow-color: rgba(0, 0, 0, 0.2);
+    --light-theme-selection-bg-color: rgba(84, 138, 145, 0.35);
+
+    --dark-theme-bg-color: #111826;
+    --dark-theme-shade-faded: #333B45;
+    --dark-theme-shade-0: #7D828A;
+    --dark-theme-shade-1: #B7BBC0;
+    --dark-theme-shade-2: #FDFDFD;
+    --dark-theme-font-color: #B7BBC0;
+    --dark-theme-font-color-light: #8E929A;
+    --dark-theme-font-color-contrast: #FDFDFD;
+    --dark-theme-border-color-light: #272F3C;
+    --dark-theme-border-color-dark: #474D59;
+    --dark-theme-primary-color: #CF451A;
+    --dark-theme-primary-color-contrast: #FDFDFD;
+    --dark-theme-primary-color-faded: #83341F;
+    --dark-theme-secondary-color: #30626B;
+    --dark-theme-control-bg-color: #2A303C;
+    --dark-theme-control-bg-color-focus: #1E2431;
+    --dark-theme-control-border-color-light: #3D434F;
+    --dark-theme-control-border-color-dark: #474D59;
+    --dark-theme-control-shadow-color: rgba(0, 0, 10, 0.2);
+    --dark-theme-selection-bg-color: rgba(131, 52, 31, 0.5);
+
+    /* // Font theme */
+
+    --theme-font-family: 'Inter', sans-serif;
+    --theme-heading-font-family: 'Oswald', serif;
+    --theme-accent-font-family: 'Libre Baskerville', sans-serif;
+
+    /* // Fonts */
+
+    --font-strong-weight: 700;
+    --font-line-height: 1.6;
+
+    --font-heading-line-height: 1.2;
+    --font-heading-weight: 700;
+
+    /* // Controls  */
+    
+    --control-font-weight: 500;
+    --control-light-weight: 400;
+    --control-strong-weight: 600;
+
+    /* // Border style */
+
+    --border-horizontal-height: 3px;
+    --border-vertical-width: 3px;
+    --border-size: 1px;
+}

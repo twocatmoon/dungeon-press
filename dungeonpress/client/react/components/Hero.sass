@@ -1,0 +1,36 @@
+.Hero
+    margin-bottom: 60px
+    
+.Hero__Image
+    margin-bottom: var(--spacing-2)
+    position: relative
+    font-size: 0
+    word-spacing: 0
+    overflow: hidden
+
+    img
+        width: 100%
+        height: auto
+    
+    &::after
+        content: ''
+        position: absolute
+        left: var(--spacing-1)
+        right: var(--spacing-1)
+        bottom: var(--spacing-1)
+        top: var(--spacing-1)
+        border: solid 1px var(--bg-color)
+
+.Hero__Credits
+    font-size: var(--font-size-0)
+
+    a
+        font-weight: normal
+        border-bottom-width: 1px !important
+
+    dd
+        a,
+        span
+            &:not(:last-child)
+                &:after
+                    content: ', '

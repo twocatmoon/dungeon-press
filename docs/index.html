@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dungeon Press Adventure | An adventure created with Dungeon Press</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="An adventure created with Dungeon Press" />
+        <meta name="keywords" content="dnd5e,adventure" />
+        <meta property="og:title" content="Dungeon Press Adventure">
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="/images/hero.webp" />
+        <meta property="og:url" content="https://www.dungeonpress.com/" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Two-Cat Moon",
+                "url": "{{attributes.authorUrl}}",
+                "logo": "/icon.svg"
+            }
+        </script>              
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Dungeon Press Adventure | An adventure created with Dungeon Press",
+                "author": {
+                    "@type": "Person",
+                    "name": "Two-Cat Moon"
+                },
+                "datePublished": "2024-01-01T00:00:00.000Z",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Two-Cat Moon",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "/icon.svg"
+                    }
+                },
+                "description": "An adventure created with Dungeon Press",
+                "image": "/images/hero.webp",
+                "articleBody": "<p>Dungeon Press is a static site generator that leverages the simplicity and flexibility of Markdown to create interactive tabletop adventures with a clean, minimalistic design. It&#39;s designed to cater to both creators and players by offering advanced formatting features, dynamic content adjustment, and easy publishing options.</p>\n",
+                "articleSection": ["Welcome to Dungeon Press","Typography","Markdown Features","Example Blocks"],
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://www.dungeonpress.com/"
+                }
+              }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Dungeon Press",
+                "applicationCategory": "Game application",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0.00",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "softwareVersion": "1.0.0",
+                "description": "TODO",
+                "features": [TODO],
+                "downloadUrl": "https://github.com/twocatmoon/dungeon-press",
+            }
+        </script>
+      <script type="module" crossorigin src="/assets/index-2e7c77e3.js"></script>
+      <link rel="stylesheet" href="/assets/index-2ade1c0d.css">
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+            <defs>
+                <symbol id="angleDown_x12" viewBox="0 0 12 12" width="12" height="12">
+                    
+<path d="M6.00004 8C5.66857 8.0002 5.35059 7.86872 5.11604 7.6345L2.46954 4.9875L3.53054 3.927L6.00004 6.3965L8.46954 3.927L9.53054 4.9875L6.88404 7.634C6.76795 7.75007 6.63013 7.84213 6.47845 7.90493C6.32677 7.96773 6.16421 8.00003 6.00004 8V8Z" />
+
+
+                </symbol>
+<symbol id="book_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_51_615)">
+<path d="M15.1833 1.16466C14.9278 0.951173 14.6284 0.796498 14.3064 0.71159C13.9844 0.626683 13.6476 0.613619 13.32 0.673326L9.38667 1.38866C8.87212 1.48157 8.39229 1.71193 7.998 2.05533C7.6038 1.71179 7.12393 1.48141 6.60933 1.38866L2.68 0.673326C2.35245 0.61377 2.01581 0.626886 1.69388 0.711746C1.37195 0.796605 1.07259 0.951138 0.816956 1.16442C0.561321 1.3777 0.355652 1.64453 0.214485 1.94605C0.0733171 2.24756 9.72656e-05 2.5764 0 2.90933L0 13.9253L8 15.38L16 13.9253V2.90933C16.0004 2.57639 15.9274 2.24746 15.7862 1.94592C15.6451 1.64438 15.4392 1.37764 15.1833 1.16466V1.16466ZM7 13.1647L2 12.256V2.90933C2.00035 2.86957 2.00937 2.83037 2.02643 2.79446C2.04349 2.75855 2.06818 2.72679 2.09877 2.70141C2.12936 2.67602 2.16513 2.65761 2.20357 2.64746C2.24201 2.63731 2.2822 2.63568 2.32133 2.64266L6.25467 3.35799C6.46355 3.39616 6.65247 3.50628 6.78862 3.66922C6.92478 3.83217 6.99956 4.03765 7 4.24999V13.1647ZM14 12.256L9 13.1653V4.24999C9.00003 4.03712 9.07479 3.83101 9.21125 3.66762C9.34771 3.50423 9.5372 3.39394 9.74667 3.35599L13.68 2.64133C13.7192 2.6341 13.7594 2.63557 13.798 2.64562C13.8365 2.65567 13.8724 2.67407 13.903 2.6995C13.9337 2.72494 13.9584 2.75679 13.9754 2.79282C13.9923 2.82885 14.0012 2.86816 14.0013 2.90799L14 12.256Z" />
+</g>
+<defs>
+<clipPath id="clip0_51_615">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="cross_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_76_96)">
+<path d="M16.0406 1.37396L14.626 -0.0407104L7.99996 6.58596L1.37396 -0.0407104L-0.0407104 1.37396L6.58596 7.99996L-0.0407104 14.626L1.37396 16.0406L7.99996 9.41396L14.626 16.0406L16.0406 14.626L9.41396 7.99996L16.0406 1.37396Z" />
+</g>
+<defs>
+<clipPath id="clip0_76_96">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="marker_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_73_80)">
+<path d="M7.99997 0.0138397C6.22091 0.0159572 4.51532 0.723673 3.25739 1.98173C1.99946 3.23978 1.29191 4.94544 1.28997 6.72451C1.28997 10.2405 6.73397 14.9438 7.35664 15.4692L8.00131 16.0138L8.64597 15.4692C9.26731 14.9438 14.7126 10.2405 14.7126 6.72451C14.7107 4.94498 14.0028 3.23892 12.7443 1.98079C11.4858 0.722656 9.77951 0.0152514 7.99997 0.0138397V0.0138397ZM7.99997 13.3758C5.95664 11.5145 3.28864 8.49051 3.28864 6.72451C3.28864 5.47498 3.78501 4.27664 4.66856 3.39309C5.5521 2.50954 6.75045 2.01317 7.99997 2.01317C9.2495 2.01317 10.4478 2.50954 11.3314 3.39309C12.2149 4.27664 12.7113 5.47498 12.7113 6.72451C12.7113 8.48717 10.0426 11.5125 7.99997 13.3758Z" />
+</g>
+<defs>
+<clipPath id="clip0_73_80">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="moon_x12" viewBox="0 0 12 12" width="12" height="12">
+                    
+<g clip-path="url(#clip0_57_630)">
+<path d="M6.99997 12.0001C5.4092 11.9984 3.88407 11.3657 2.75923 10.2409C1.63438 9.11604 1.00169 7.59092 0.999967 6.00014C0.923467 1.52214 6.01547 -1.49236 9.89547 0.754645L10.672 1.18564L9.90047 1.62564C6.55047 3.46964 6.79547 8.56064 10.3005 10.0786L11.111 10.4441L10.3775 10.9471C9.38415 11.6319 8.20642 11.9991 6.99997 12.0001V12.0001ZM6.99997 1.00014C5.67433 1.0016 4.40341 1.52885 3.46604 2.46622C2.52867 3.40359 2.00142 4.67451 1.99997 6.00014C1.92247 9.55865 5.88147 12.1001 9.07747 10.5411C8.32924 10.039 7.70897 9.36864 7.26632 8.58374C6.82367 7.79884 6.57095 6.92121 6.52838 6.0211C6.4858 5.121 6.65457 4.22343 7.02115 3.40025C7.38774 2.57708 7.94197 1.85117 8.63947 1.28065C8.11308 1.09387 7.55851 0.998985 6.99997 1.00014V1.00014Z" />
+</g>
+<defs>
+<clipPath id="clip0_57_630">
+<rect width="12" height="12" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="note_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_51_613)">
+<path d="M14.364 0H1.636C1.20227 0.000529264 0.786453 0.173063 0.479758 0.479758C0.173063 0.786453 0.000529264 1.20227 0 1.636L0 13.3333H4.62533L7.32467 15.5913C7.51538 15.7466 7.75411 15.8307 8 15.8293C8.25086 15.8293 8.49396 15.7423 8.688 15.5833L11.3747 13.3333H16V1.636C15.9995 1.20227 15.8269 0.786453 15.5202 0.479758C15.2135 0.173063 14.7977 0.000529264 14.364 0V0ZM14 11.3333H10.648L8 13.548L5.352 11.3333H2V2H14V11.3333Z" />
+<path d="M8 4H4V6H8V4Z" />
+<path d="M12 7.33344H4V9.33343H12V7.33344Z" />
+</g>
+<defs>
+<clipPath id="clip0_51_613">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="pencil_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_93_166)">
+<path d="M15.216 0.784014C14.7064 0.297115 14.0288 0.0254059 13.324 0.0254059C12.6192 0.0254059 11.9416 0.297115 11.432 0.784014L0 12.216V16H3.784L15.216 4.56801C15.7171 4.06584 15.9985 3.38541 15.9985 2.67601C15.9985 1.96662 15.7171 1.28619 15.216 0.784014V0.784014ZM2.956 14H2V13.044L10.4353 4.60935L11.3913 5.56468L2.956 14Z" />
+</g>
+<defs>
+<clipPath id="clip0_93_166">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="settings_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_51_614)">
+<path d="M7.13333 1.75023C6.94588 1.35166 6.64887 1.01467 6.27701 0.778624C5.90514 0.542581 5.47379 0.417236 5.03333 0.417236C4.59288 0.417236 4.16152 0.542581 3.78966 0.778624C3.4178 1.01467 3.12079 1.35166 2.93333 1.75023H0V3.75023H2.93C3.11746 4.1488 3.41447 4.4858 3.78633 4.72184C4.15819 4.95788 4.58955 5.08323 5.03 5.08323C5.47045 5.08323 5.90181 4.95788 6.27367 4.72184C6.64553 4.4858 6.94254 4.1488 7.13 3.75023H16V1.75023H7.13333Z" />
+<path d="M10.97 5.66624C10.5296 5.66703 10.0984 5.79272 9.7266 6.02873C9.35477 6.26475 9.0575 6.60139 8.86933 6.99958H0V8.99958H8.86667C9.05412 9.39815 9.35113 9.73514 9.723 9.97119C10.0949 10.2072 10.5262 10.3326 10.9667 10.3326C11.4071 10.3326 11.8385 10.2072 12.2103 9.97119C12.5822 9.73514 12.8792 9.39815 13.0667 8.99958H16V6.99958H13.07C12.8819 6.60149 12.5847 6.26492 12.213 6.02891C11.8413 5.79291 11.4103 5.66715 10.97 5.66624V5.66624Z" />
+<path d="M5.03 10.9163C4.5897 10.9172 4.15869 11.0429 3.78698 11.2789C3.41528 11.5149 3.11812 11.8515 2.93 12.2496H0V14.2496H2.93C3.11746 14.6482 3.41447 14.9852 3.78633 15.2212C4.15819 15.4572 4.58955 15.5826 5.03 15.5826C5.47045 15.5826 5.90181 15.4572 6.27367 15.2212C6.64553 14.9852 6.94254 14.6482 7.13 14.2496H16V12.2496H7.13333C6.94497 11.851 6.64729 11.5141 6.27494 11.278C5.90259 11.042 5.47086 10.9165 5.03 10.9163V10.9163Z" />
+</g>
+<defs>
+<clipPath id="clip0_51_614">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="shuffle_x12" viewBox="0 0 12 12" width="12" height="12">
+                    
+<g clip-path="url(#clip0_51_616)">
+<path d="M11.8285 8.58187L10.015 6.76837V8.23787C8.82982 8.15989 7.72211 7.62156 6.9285 6.73787C6.8285 6.85237 6.7285 6.96587 6.6245 7.08787C6.405 7.34187 6.1745 7.60487 5.937 7.86737C7.00297 8.99549 8.46464 9.66664 10.015 9.73986V11.1744L11.8285 9.36086C11.8797 9.30977 11.9204 9.24907 11.9482 9.18223C11.9759 9.11539 11.9902 9.04373 11.9902 8.97137C11.9902 8.899 11.9759 8.82734 11.9482 8.7605C11.9204 8.69367 11.8797 8.63296 11.8285 8.58187Z" />
+<path d="M10.006 3.7574V5.2074L11.827 3.3864C11.9307 3.28269 11.9889 3.14205 11.9889 2.9954C11.9889 2.84875 11.9307 2.7081 11.827 2.6044L10.006 0.782898V2.2554C7.743 2.3604 6.3795 3.5924 5.2445 4.8604C4.033 3.5199 2.56 2.2434 -0.010498 2.2434V3.7459C2.034 3.7459 3.1345 4.7429 4.2495 6.0004C3.1345 7.2579 2.034 8.2539 -0.010498 8.2539V9.7564C3.013 9.7564 4.52 7.9899 5.8665 6.4309C7.05 5.0629 8.0805 3.8739 10.006 3.7574Z" />
+</g>
+<defs>
+<clipPath id="clip0_51_616">
+<rect width="12" height="12" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="sun_x12" viewBox="0 0 12 12" width="12" height="12">
+                    
+<g clip-path="url(#clip0_57_634)">
+<path d="M12 6.5V5.5H9.464C9.42414 5.22195 9.3506 4.94979 9.245 4.6895L11.441 3.411L10.938 2.547L8.741 3.826C8.57302 3.61485 8.38144 3.42361 8.17 3.256L9.445 1.0635L8.581 0.5605L7.306 2.753C7.04709 2.64836 6.77645 2.57549 6.5 2.536V0H5.5V2.536C5.22572 2.57499 4.95712 2.64684 4.7 2.75L3.427 0.5605L2.563 1.0635L3.8355 3.25C3.62292 3.4183 3.43048 3.61057 3.262 3.823L1.07 2.547L0.567 3.411L2.7565 4.6855C2.64995 4.94696 2.5759 5.2205 2.536 5.5H0V6.5H2.536C2.57593 6.7782 2.64946 7.05052 2.755 7.311L0.5705 8.5825L1.0735 9.447L3.2595 8.174C3.42571 8.38338 3.61527 8.5731 3.8245 8.7395L2.55 10.9325L3.4145 11.4355L4.6885 9.2445C4.94906 9.35042 5.22158 9.42413 5.5 9.464V12H6.5V9.464C6.7811 9.42373 7.05617 9.349 7.319 9.2415L8.595 11.4355L9.459 10.9325L8.181 8.735C8.38918 8.56882 8.57788 8.37962 8.7435 8.171L10.935 9.447L11.435 8.5825L9.244 7.307C9.34966 7.04787 9.42353 6.7769 9.464 6.5H12ZM8.5 6C8.395 9.304 3.6045 9.303 3.5 6C3.605 2.696 8.3955 2.697 8.5 6Z" />
+</g>
+<defs>
+<clipPath id="clip0_57_634">
+<rect width="12" height="12" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="sweep_x12" viewBox="0 0 12 12" width="12" height="12">
+                    
+<g clip-path="url(#clip0_51_617)">
+<path d="M9.718 4.31997L12 2.03697L10.9405 0.976471L8.645 3.27197L7.77 2.41697C7.54878 2.20132 7.25447 2.07689 6.94564 2.06846C6.63682 2.06003 6.33615 2.16821 6.1035 2.37147C5.24722 3.14858 4.25105 3.75585 3.168 4.16097L0 5.08997V5.64997C0.0191308 7.35082 0.712195 8.97462 1.92712 10.1651C3.14205 11.3555 4.77961 12.0154 6.4805 12H7.157L7.3505 11.865C8.35876 11.2178 9.19504 10.3358 9.78765 9.29454C10.3803 8.25328 10.7115 7.08383 10.753 5.88647C10.7578 5.71598 10.7272 5.54634 10.6632 5.38826C10.5992 5.23017 10.5031 5.08707 10.381 4.96797L9.718 4.31997ZM6.68 10.5H6.48C6.00895 10.5002 5.54015 10.4351 5.087 10.3065C5.73431 9.89111 6.29221 9.35072 6.728 8.71697L6.975 8.35347L5.735 7.50997L5.4885 7.87247C5.07875 8.47058 4.52417 8.95516 3.8765 9.28097L3.45 9.49497C3.14577 9.26641 2.86894 9.00351 2.625 8.71147C3.3015 8.42988 3.91854 8.02271 4.4435 7.51147L3.3935 6.44047C2.95166 6.86923 2.42315 7.19844 1.8435 7.40597C1.68766 7.02023 1.58358 6.61554 1.534 6.20247L3.59 5.59997C4.35799 5.3459 5.08544 4.98268 5.75 4.52147L8.913 7.59997C8.47495 8.76793 7.69722 9.77797 6.68 10.5V10.5Z" />
+</g>
+<defs>
+<clipPath id="clip0_51_617">
+<rect width="12" height="12" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="trash_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_76_158)">
+<path d="M15.3334 2H12.0001V1.66667C12.0001 1.22464 11.8245 0.800716 11.5119 0.488155C11.1993 0.175595 10.7754 0 10.3334 0L5.66672 0C5.22469 0 4.80077 0.175595 4.48821 0.488155C4.17565 0.800716 4.00005 1.22464 4.00005 1.66667V2H0.666718V4H2.00005V14C2.00005 14.5304 2.21076 15.0391 2.58584 15.4142C2.96091 15.7893 3.46962 16 4.00005 16H12.0001C12.5305 16 13.0392 15.7893 13.4143 15.4142C13.7893 15.0391 14.0001 14.5304 14.0001 14V4H15.3334V2ZM12.0001 14H4.00005V4H12.0001V14Z" />
+<path d="M7.33327 6H5.33327V12H7.33327V6Z" />
+<path d="M10.6667 6H8.66673V12H10.6667V6Z" />
+</g>
+<defs>
+<clipPath id="clip0_76_158">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+<symbol id="wand_x16" viewBox="0 0 16 16" width="16" height="16">
+                    
+<g clip-path="url(#clip0_73_76)">
+<path d="M9.63128 2.884L0.765949 11.5333C0.399782 11.8992 0.150364 12.3654 0.0492585 12.873C-0.0518467 13.3806 -9.43938e-05 13.9068 0.197966 14.385C0.396027 14.8632 0.731493 15.2719 1.16191 15.5594C1.59233 15.8469 2.09836 16.0002 2.61595 16C2.95764 16.0014 3.29624 15.9352 3.61225 15.8052C3.92827 15.6753 4.21545 15.4841 4.45728 15.2427L13.3333 6.58333L9.63128 2.884ZM10.4853 6.566L8.74662 8.26267L7.87528 7.39133L9.61395 5.69467L10.4853 6.566ZM3.05128 13.8193C2.93421 13.9317 2.77822 13.9945 2.61595 13.9945C2.45368 13.9945 2.29769 13.9317 2.18062 13.8193C2.06661 13.7054 2.00179 13.5514 2.00004 13.3902C1.9983 13.2291 2.05977 13.0737 2.17128 12.9573L6.44395 8.788L7.31528 9.65933L3.05128 13.8193ZM14.222 10.4447L16 11.3333L14.222 12.222L13.3333 14L12.4446 12.222L10.6666 11.3333L12.4446 10.4447L13.3333 8.66667L14.222 10.4447ZM3.77795 3.55533L1.99995 2.66667L3.77795 1.778L4.66662 0L5.55528 1.778L7.33328 2.66667L5.55528 3.55533L4.66662 5.33333L3.77795 3.55533ZM12.8886 3.11133L11.3333 2.33333L12.8886 1.55533L13.6666 0L14.4446 1.55533L16 2.33333L14.4446 3.11133L13.6666 4.66667L12.8886 3.11133Z" />
+</g>
+<defs>
+<clipPath id="clip0_73_76">
+<rect width="16" height="16" />
+</clipPath>
+</defs>
+
+
+                </symbol>
+            </defs>
+        </svg>
+<script>window.__ADVENTURE__ = {"attributes":{"title":"Dungeon Press Adventure","titleShort":"Dungeon Press Adventure","tagline":"An adventure created with Dungeon Press","description":"An adventure created with Dungeon Press","summary":"<p>Dungeon Press is a static site generator that leverages the simplicity and flexibility of Markdown to create interactive tabletop adventures with a clean, minimalistic design. It&#39;s designed to cater to both creators and players by offering advanced formatting features, dynamic content adjustment, and easy publishing options.</p>\n","version":"1.0.0","author":"Two-Cat Moon","authorLink":"https://www.dungeonpress.com","tags":["dnd5e","adventure"],"created":"2024-01-01T00:00:00.000Z","modified":"2024-01-01T00:00:00.000Z","seed":"dungeonpress","credits":[{"name":"Jordan Ranson","role":"Developer & Designer","link":"https://www.jordanranson.com"}]},"content":"<h2 id=\"welcome-to-dungeon-press\" tabindex=\"-1\" data-heading>\n                    <a name=\"welcome-to-dungeon-press\" class=\"anchor\" href=\"#welcome-to-dungeon-press\">#</a>\n                    Welcome to Dungeon Press\n                </h2><p>Thank you for embarking on an adventure with Dungeon Press, where your creativity brings to life tales of courage, mystery, and magic. Whether you&#39;re a seasoned dungeon master or a newcomer to tabletop storytelling, this guide is your first step towards crafting memorable experiences for your players. </p>\n<h3 id=\"getting-started\" tabindex=\"-1\" data-heading>\n                    <a name=\"getting-started\" class=\"anchor\" href=\"#getting-started\">#</a>\n                    Getting Started\n                </h3><dl>\n<dt><strong>Familiarize yourself with Markdown syntax</strong></dt><dd>Dungeon Press utilizes Markdown for all adventure creation. A quick guide is provided under the <a href=\"#markdown-features\">Markdown Features</a> section.</dd>\n<dt><strong>Explore example blocks</strong></dt><dd>Check out the pre-defined blocks like &#39;thing&#39;, &#39;narrative&#39;, and &#39;info&#39; to understand how to structure your adventure&#39;s content.</dd>\n<dt><strong>Customize your adventure</strong></dt><dd>Use the dynamic content features, such as dice rolls and difficulty checks, to tailor challenges to your players&#39; levels.</dd>\n<dt><strong>Preview your adventure</strong></dt><dd>Utilize Dungeon Press&#39;s live preview feature to see how your adventure will appear to players and make real-time adjustments.</dd>\n<dt><strong>Publish and share</strong></dt><dd>Once satisfied, follow the steps in the <a href=\"https://github.com/twocatmoon/dungeon-press/blob/trunk/README.md\">readme</a> to share your creation with the world or with your gaming group.</dd>\n</dl><p>Remember, the essence of Dungeon Press is to make adventure creation as fun as the adventures themselves. Happy creating!</p>\n<h2 id=\"typography\" tabindex=\"-1\" data-heading>\n                    <a name=\"typography\" class=\"anchor\" href=\"#typography\">#</a>\n                    Typography\n                </h2><h3 id=\"table-of-contents\" tabindex=\"-1\" data-heading>\n                    <a name=\"table-of-contents\" class=\"anchor\" href=\"#table-of-contents\">#</a>\n                    Table of Contents\n                </h3><p>Heading levels between 1 and 3 will automatically be added to the table of contents. These headings can also be externally linked to via fragment identifiers.</p>\n<h3 id=\"examples\" tabindex=\"-1\" data-heading>\n                    <a name=\"examples\" class=\"anchor\" href=\"#examples\">#</a>\n                    Examples\n                </h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus neque vel turpis ultricies ornare. <strong>This sentence is bold.</strong> Pellentesque neque orci, tincidunt convallis magna eu, pharetra gravida arcu. Etiam non metus vel lorem pretium scelerisque. </p>\n<p><em>\"This sentence is dialog.\"</em> Nullam tristique arcu ante, ut interdum justo viverra id. Suspendisse nec nisl vel mauris pulvinar ultrices. </p>\n<h3 id=\"heading-level-2\" tabindex=\"-1\" data-heading>\n                    <a name=\"heading-level-2\" class=\"anchor\" href=\"#heading-level-2\">#</a>\n                    Heading Level 2\n                </h3><h6 id=\"tagline-or-subheader\" tabindex=\"-1\" data-heading>\n                    \n                    Tagline or Subheader\n                </h6><p>Pellentesque neque orci, tincidunt convallis magna eu, pharetra gravida arcu. Etiam non metus vel lorem pretium scelerisque. <a href=\"https://www.dungeonpress.com\">This sentence is a link</a>. Nullam tristique arcu ante, ut interdum justo viverra id. Suspendisse nec nisl vel mauris pulvinar ultrices. </p>\n<h4 id=\"heading-level-3\" tabindex=\"-1\" data-heading>\n                    <a name=\"heading-level-3\" class=\"anchor\" href=\"#heading-level-3\">#</a>\n                    Heading Level 3\n                </h4><p>Nunc convallis, nibh eu eleifend commodo, nisl metus sodales dui, quis tincidunt felis sem et nisi. Nullam eu metus sapien. <a href=\"#typography\">This sentence links internally</a>. Donec eu velit orci. Fusce quis lorem vitae urna tempus condimentum. Cras elementum dui fermentum enim fringilla facilisis. </p>\n<hr>\n<h5 id=\"heading-level-4\" tabindex=\"-1\" data-heading>\n                    \n                    Heading Level 4\n                </h5><p>Proin vulputate leo lorem, non finibus leo condimentum in. Aliquam tortor mi, congue nec luctus eget, vulputate quis arcu. </p>\n<h3 id=\"example-media\" tabindex=\"-1\" data-heading>\n                    <a name=\"example-media\" class=\"anchor\" href=\"#example-media\">#</a>\n                    Example Media\n                </h3><p><img src=\"/images/map.webp\" alt=\"Alt text\" title=\"Map\"></p>\n<h2 id=\"markdown-features\" tabindex=\"-1\" data-heading>\n                    <a name=\"markdown-features\" class=\"anchor\" href=\"#markdown-features\">#</a>\n                    Markdown Features\n                </h2><h3 id=\"ability-scores\" tabindex=\"-1\" data-heading>\n                    <a name=\"ability-scores\" class=\"anchor\" href=\"#ability-scores\">#</a>\n                    Ability Scores\n                </h3><p><em>Ability scores are scaled with difficulty.</em></p>\n<p>Creates an ability score table with modifiers.</p>\n\n            <ability-scores scores=\"12,15,12,3,12,6\">\n                \n                        <span>\n                            <span>STR</span>\n                            <span>\n                                12 (+1)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>DEX</span>\n                            <span>\n                                15 (+2)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>CON</span>\n                            <span>\n                                12 (+1)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>INT</span>\n                            <span>\n                                3 (-4)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>WIS</span>\n                            <span>\n                                12 (+1)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>CHA</span>\n                            <span>\n                                6 (-2)\n                            </span>\n                        </span>\n                    \n            </ability-scores>\n        <hr>\n\n            <ability-scores scores=\"17,15,15,3,12,7\">\n                \n                        <span>\n                            <span>STR</span>\n                            <span>\n                                17 (+3)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>DEX</span>\n                            <span>\n                                15 (+2)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>CON</span>\n                            <span>\n                                15 (+2)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>INT</span>\n                            <span>\n                                3 (-4)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>WIS</span>\n                            <span>\n                                12 (+1)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>CHA</span>\n                            <span>\n                                7 (-2)\n                            </span>\n                        </span>\n                    \n            </ability-scores>\n        <h3 id=\"description-list\" tabindex=\"-1\" data-heading>\n                    <a name=\"description-list\" class=\"anchor\" href=\"#description-list\">#</a>\n                    Description List\n                </h3><p>Indented description list item with a bolded inline heading.</p>\n<p><em>Hint: try using quotes with description lists to build dialog options.</em></p>\n<dl>\n<dt>Prologue—Avalanche.</dt><dd>An avalanche threatens the characters, but they&#39;re led to safety by an odd muskrat. They then meet Mother Tusk who briefs them on four tasks she&#39;d like them to undertake in return for saving their lives during the avalanche.</dd>\n<dt>Unsure Footing.</dt><dd>Mother Tusk asks the characters to rescue one of her children, an awakened otter named Spritzel, who&#39;s been spying on Easthaven. The characters quickly find Spritzel, and some of his otter friends, fleeing from a pack of wolves.</dd>\n<dt>What Does Spritzel Look Like?</dt><dd><em>\"He's a white-furred otter with a brown patch above his right eye, and he wears a pearl earring.\"</em></dd>\n</dl><h3 id=\"collapsable-details\" tabindex=\"-1\" data-heading>\n                    <a name=\"collapsable-details\" class=\"anchor\" href=\"#collapsable-details\">#</a>\n                    Collapsable Details\n                </h3><p>Collapsable block of content with a heading.</p>\n<p><strong>Parameters</strong></p>\n<ul>\n<li>&#39;open&#39; when present, the block will be open by default</li>\n</ul>\n<details open>\n    <summary>\n        <hr />\n        <span>Actions</span>\n    </summary>\n    <dl>\n<dt>Bite.</dt><dd><em>Melee Weapon Attack:</em> <span>+5</span> to hit, reach 5 ft., one target. <em>Hit:</em> <dice-roll roll=2d6+3>10 (2d6 + 3)</dice-roll> piercing damage. If the target is a creature, it must succeed on a <dice-roll challenge=\"13\" skills=\"strength\">DC 13 Strength</dice-roll> saving throw or be knocked prone.</dd>\n</dl>\n</details><h3 id=\"details-blocks\" tabindex=\"-1\" data-heading>\n                    <a name=\"details-blocks\" class=\"anchor\" href=\"#details-blocks\">#</a>\n                    Details Blocks\n                </h3><p>Stylized blocks intended to convey supplementary or important information to the players and dungeon master. </p>\n<p><strong>Parameters</strong></p>\n<ul>\n<li>&#39;narrative&#39; blocks are meant to be read aloud to the players</li>\n<li>&#39;info&#39; blocks are for information intended for only the dungeon master</li>\n<li>&#39;thing&#39; blocks can be used to create NPCs, items, spells, locations, etc.</li>\n</ul>\n<details-block type=\"narrative\"><p>Travel is incredibly difficult in the deep snow. A bitter wind cuts through your clothing, and ice crystals riding the strong breeze sting your eyes.</p>\n</details-block><details-block type=\"info\"><h5 id=\"lightning-in-icewind-dale\" tabindex=\"-1\" data-heading>\n                    \n                    Lightning in Icewind Dale\n                </h5><p>Unless otherwise noted in the adventure, daytime hours\nprovide dim light outdoors, while the nighttime hours are\ndark. The permanent dusk of Auril&#39;s curse makes the promise\nof sunlight seem a teasing possibility, but the sun never\nbreaks the horizon.</p>\n</details-block><details-block type=\"thing\"><h4 id=\"spritzel-sprit-zell-\" tabindex=\"-1\" data-heading>\n                    <a name=\"spritzel-sprit-zell-\" class=\"anchor\" href=\"#spritzel-sprit-zell-\">#</a>\n                    Spritzel (SPRIT-zell)\n                </h4><p>The awakened otter likes to wear jewelry and generally\nmake a spectacle of himself.</p>\n<dl>\n<dt>What They Want.</dt><dd>To brave danger and find shiny things.</dd>\n<dt>Irrepressible.</dt><dd>As an awakened animal, Spritzel knows he&#39;s going to die. He doesn&#39;t want to die any time soon, but he wants to die spectacularly and for a good cause.</dd>\n</dl></details-block><h3 id=\"dialog\" tabindex=\"-1\" data-heading>\n                    <a name=\"dialog\" class=\"anchor\" href=\"#dialog\">#</a>\n                    Dialog\n                </h3><p>Stylized text useful for distinguishing dialog and speech.</p>\n<p><em>\"He's a white-furred otter with a brown patch above his right eye, and he wears a pearl earring.\"</em></p>\n<h3 id=\"dice-rolls\" tabindex=\"-1\" data-heading>\n                    <a name=\"dice-rolls\" class=\"anchor\" href=\"#dice-rolls\">#</a>\n                    Dice Rolls\n                </h3><p><em>Dice rolls are scaled with difficulty.</em></p>\n<p>Shortcuts for creating dice rolls, with averages automatically included.</p>\n<ul>\n<li><dice-roll roll=1d2 0>1 (1d2)</dice-roll></li>\n<li><dice-roll roll=1d4+2>4 (1d4 + 2)</dice-roll></li>\n<li><dice-roll roll=1d6-4>-1 (1d6 - 4)</dice-roll></li>\n<li><dice-roll roll=1d8+6>10 (1d8 + 6)</dice-roll></li>\n</ul>\n<h3 id=\"difficulty-checks\" tabindex=\"-1\" data-heading>\n                    <a name=\"difficulty-checks\" class=\"anchor\" href=\"#difficulty-checks\">#</a>\n                    Difficulty Checks\n                </h3><p><em>Difficulty checks are scaled with difficulty.</em></p>\n<p>Shortcuts for creating difficulty checks.</p>\n<ul>\n<li><dice-roll challenge=\"10\" skills=\"\">DC 10 </dice-roll></li>\n<li><dice-roll challenge=\"-1\" skills=\"perception\">Wisdom (Perception)</dice-roll></li>\n<li><dice-roll challenge=\"13\" skills=\"strength\">DC 13 Strength</dice-roll></li>\n<li><dice-roll challenge=\"10\" skills=\"nature,animal_handling\">DC 10 Intelligence (Nature) or Wisdom (Animal Handling)</dice-roll></li>\n<li><dice-roll challenge=\"11\" skills=\"\">DC 11 </dice-roll></li>\n</ul>\n<h3 id=\"dynamic-values\" tabindex=\"-1\" data-heading>\n                    <a name=\"dynamic-values\" class=\"anchor\" href=\"#dynamic-values\">#</a>\n                    Dynamic Values\n                </h3><p>Static values that scale with difficulty.</p>\n<p><em>Hint: values that start with two #s are still stylized, but are not scaled with difficulty.</em></p>\n<ul>\n<li>+3</li>\n<li><span>-4</span></li>\n<li><span>5</span></li>\n<li><span>+6</span></li>\n</ul>\n<h3 id=\"inline-checkboxes\" tabindex=\"-1\" data-heading>\n                    <a name=\"inline-checkboxes\" class=\"anchor\" href=\"#inline-checkboxes\">#</a>\n                    Inline Checkboxes\n                </h3><p>Inline checkboxes will retain their checked state, stored in the browser&#39;s local storage.</p>\n<ul>\n<li><input data-id=\"f95c6\" type=\"checkbox\" /> I stay checked when you refresh the page</li>\n</ul>\n<h3 id=\"tables\" tabindex=\"-1\" data-heading>\n                    <a name=\"tables\" class=\"anchor\" href=\"#tables\">#</a>\n                    Tables\n                </h3><p>Dungeon Press adds two special table features to help you generate content efficiently.</p>\n<h4 id=\"roll-tables\" tabindex=\"-1\" data-heading>\n                    <a name=\"roll-tables\" class=\"anchor\" href=\"#roll-tables\">#</a>\n                    Roll Tables\n                </h4><p>You can create a roll table by prefixing the first column heading with &#39;d<NUMBER>&#39;. Roll tables will automatically generate a column for the number value of the roll result.</p>\n<table>\n<thead>\n<tr>\n<th align=\"center\">d4 </th>\n<th>Treasure Chest Contents</th>\n</tr>\n</thead>\n<tbody><tr>\n<td align=\"center\">1</td>\n<td>100 gp</td>\n</tr>\n<tr>\n<td align=\"center\">2</td>\n<td>+1 Dagger</td>\n</tr>\n<tr>\n<td align=\"center\">3</td>\n<td>Potion of Healing x 5</td>\n</tr>\n<tr>\n<td align=\"center\">4</td>\n<td>Just a rock</td>\n</tr>\n</tbody></table>\n<h4 id=\"random-tables\" tabindex=\"-1\" data-heading>\n                    <a name=\"random-tables\" class=\"anchor\" href=\"#random-tables\">#</a>\n                    Random Tables\n                </h4><p>Random tables take this a step further. Replace the &#39;d&#39; with an &#39;r&#39; and Dungeon Press will randomly pick a number of rows from the table equal to the number of outcomes possible given the dice. </p>\n<p>Create more rows than there are outcomes to make random pools of content. Rows are picked based on a random seed which can be configured by the author or overridden by the player in the UI.</p>\n<table>\n<thead>\n<tr>\n<th>Treasure Chest Contents</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>100 gp</td>\n</tr>\n<tr>\n<td>Chipped emerald</td>\n</tr>\n<tr>\n<td>Just a rock</td>\n</tr>\n<tr>\n<td>Empty bottle</td>\n</tr>\n</tbody></table>\n<h2 id=\"example-blocks\" tabindex=\"-1\" data-heading>\n                    <a name=\"example-blocks\" class=\"anchor\" href=\"#example-blocks\">#</a>\n                    Example Blocks\n                </h2><details-block type=\"thing\"><h3 id=\"mother-tusk\" tabindex=\"-1\" data-heading>\n                    <a name=\"mother-tusk\" class=\"anchor\" href=\"#mother-tusk\">#</a>\n                    Mother Tusk\n                </h3><p>Mother Tusk was awakened by a powerful goliath druid\nto act as a companion and confidant. The druid became\ncorrupted, and Mother Tusk saw what he was doing to do\nto the animals in her care. She led the animals to safety,\nand she&#39;s been trying to protect them for the last several\nmonths.</p>\n<dl>\n<dt>What They Want.</dt><dd>To keep her charges safe.</dd>\n<dt>Caring, but Ruthless.</dt><dd>Mother Tusk cares more for her animals than for humans, and she&#39;ll happily put humans at risk for her family.</dd>\n</dl></details-block><details-block type=\"thing\"><h3 id=\"dire-wolf\" tabindex=\"-1\" data-heading>\n                    <a name=\"dire-wolf\" class=\"anchor\" href=\"#dire-wolf\">#</a>\n                    Dire Wolf\n                </h3><h5 id=\"large-beast-unaligned\" tabindex=\"-1\" data-heading>\n                    \n                    Large beast, unaligned\n                </h5><hr>\n<ul>\n<li><strong>Armor Class</strong> 14 (natural armor)</li>\n<li><strong>Hit Points</strong> <dice-roll roll=5d10+10>37 (5d10 + 10)</dice-roll></li>\n<li><strong>Speed</strong> 50 ft.</li>\n</ul>\n<hr>\n\n            <ability-scores scores=\"17,15,15,3,12,7\">\n                \n                        <span>\n                            <span>STR</span>\n                            <span>\n                                17 (+3)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>DEX</span>\n                            <span>\n                                15 (+2)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>CON</span>\n                            <span>\n                                15 (+2)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>INT</span>\n                            <span>\n                                3 (-4)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>WIS</span>\n                            <span>\n                                12 (+1)\n                            </span>\n                        </span>\n                    \n                        <span>\n                            <span>CHA</span>\n                            <span>\n                                7 (-2)\n                            </span>\n                        </span>\n                    \n            </ability-scores>\n        <hr>\n<ul>\n<li><strong>Skills</strong> Perception <span>+3</span>, Stealth <span>+4</span></li>\n<li><strong>Senses</strong> passive Perception <span>13</span></li>\n<li><strong>Languages</strong> —</li>\n<li><strong>Challenge</strong> 1 (200 XP)</li>\n</ul>\n<hr>\n<dl>\n<dt>Keen Hearing and Smell.</dt><dd>The wolf has advantage on <dice-roll challenge=\"-1\" skills=\"perception\">Wisdom (Perception)</dice-roll> checks that rely on hearing or smell.</dd>\n<dt>Pack Tactics.</dt><dd>The wolf has advantage on an attack roll against a creature if at least one of the wolf&#39;s allies is within 5 feet of the creature and the ally isn&#39;t incapacitated.</dd>\n</dl><details open>\n    <summary>\n        <hr />\n        <span>Actions</span>\n    </summary>\n    <dl>\n<dt>Bite.</dt><dd><em>Melee Weapon Attack:</em> <span>+5</span> to hit, reach 5 ft., one target. <em>Hit:</em> <dice-roll roll=2d6+3>10 (2d6 + 3)</dice-roll> piercing damage. If the target is a creature, it must succeed on a <dice-roll challenge=\"13\" skills=\"strength\">DC 13 Strength</dice-roll> saving throw or be knocked prone.</dd>\n</dl>\n</details></details-block><details-block type=\"thing\"><h3 id=\"boots-of-false-tracks\" tabindex=\"-1\" data-heading>\n                    <a name=\"boots-of-false-tracks\" class=\"anchor\" href=\"#boots-of-false-tracks\">#</a>\n                    Boots of False Tracks\n                </h3><h5 id=\"wondrous-item-common\" tabindex=\"-1\" data-heading>\n                    \n                    Wondrous item, common\n                </h5><p>These comfortable, fur-lined boots are embroidered with\ngaudy, but worthless, gems.</p>\n<p>Only humanoids can wear these boots. While wearing the\nboots, you can choose to have them leave tracks like those\nof another kind of humanoid of your size.</p>\n<p><em>Xanathar&#39;s Guide to Everything, p. 136</em></p>\n</details-block>","raw":"---\ntitle: Dungeon Press Adventure\ntitleShort: Dungeon Press Adventure\ntagline: An adventure created with Dungeon Press\ndescription: An adventure created with Dungeon Press\nsummary: >\n    Dungeon Press is a static site generator that leverages the simplicity and flexibility of Markdown to create interactive tabletop adventures with a clean, minimalistic design. It's designed to cater to both creators and players by offering advanced formatting features, dynamic content adjustment, and easy publishing options.\nversion: 1.0.0\nauthor: Two-Cat Moon\nauthorLink: https://www.dungeonpress.com\ntags: dnd5e, adventure\ncreated: 2024-01-01\nmodified: 2024-01-01\nseed: dungeonpress\ncredits:\n    - name: Jordan Ranson\n      role: Developer & Designer\n      link: https://www.jordanranson.com\n---\n\n# Welcome to Dungeon Press\n\nThank you for embarking on an adventure with Dungeon Press, where your creativity brings to life tales of courage, mystery, and magic. Whether you're a seasoned dungeon master or a newcomer to tabletop storytelling, this guide is your first step towards crafting memorable experiences for your players. \n\n## Getting Started\n:: **Familiarize yourself with Markdown syntax** :: Dungeon Press utilizes Markdown for all adventure creation. A quick guide is provided under the <a href=\"#markdown-features\">Markdown Features</a> section.\n:: **Explore example blocks** :: Check out the pre-defined blocks like 'thing', 'narrative', and 'info' to understand how to structure your adventure's content.\n:: **Customize your adventure** :: Use the dynamic content features, such as dice rolls and difficulty checks, to tailor challenges to your players' levels.\n:: **Preview your adventure** :: Utilize Dungeon Press's live preview feature to see how your adventure will appear to players and make real-time adjustments.\n:: **Publish and share** :: Once satisfied, follow the steps in the [readme](https://github.com/twocatmoon/dungeon-press/blob/trunk/README.md) to share your creation with the world or with your gaming group.\n\nRemember, the essence of Dungeon Press is to make adventure creation as fun as the adventures themselves. Happy creating!\n\n# Typography\n\n## Table of Contents\n\nHeading levels between 1 and 3 will automatically be added to the table of contents. These headings can also be externally linked to via fragment identifiers.\n\n## Examples\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus neque vel turpis ultricies ornare. **This sentence is bold.** Pellentesque neque orci, tincidunt convallis magna eu, pharetra gravida arcu. Etiam non metus vel lorem pretium scelerisque. \n\n\"This sentence is dialog.\" Nullam tristique arcu ante, ut interdum justo viverra id. Suspendisse nec nisl vel mauris pulvinar ultrices. \n\n## Heading Level 2\n##### Tagline or Subheader\nPellentesque neque orci, tincidunt convallis magna eu, pharetra gravida arcu. Etiam non metus vel lorem pretium scelerisque. [This sentence is a link](https://www.dungeonpress.com). Nullam tristique arcu ante, ut interdum justo viverra id. Suspendisse nec nisl vel mauris pulvinar ultrices. \n\n### Heading Level 3\nNunc convallis, nibh eu eleifend commodo, nisl metus sodales dui, quis tincidunt felis sem et nisi. Nullam eu metus sapien. <a href=\"#typography\">This sentence links internally</a>. Donec eu velit orci. Fusce quis lorem vitae urna tempus condimentum. Cras elementum dui fermentum enim fringilla facilisis. \n\n---\n\n#### Heading Level 4\nProin vulputate leo lorem, non finibus leo condimentum in. Aliquam tortor mi, congue nec luctus eget, vulputate quis arcu. \n\n## Example Media\n\n![Alt text](/images/map.webp \"Map\")\n\n# Markdown Features\n\n## Ability Scores\n\n_Ability scores are scaled with difficulty._\n\nCreates an ability score table with modifiers.\n\n||12,15,12,3,12,6||\n\n---\n\n||17,15,15,3,12,7||%~\n\n## Description List\n\nIndented description list item with a bolded inline heading.\n\n_Hint: try using quotes with description lists to build dialog options._\n\n:: Prologue—Avalanche. :: An avalanche threatens the characters, but they're led to safety by an odd muskrat. They then meet Mother Tusk who briefs them on four tasks she'd like them to undertake in return for saving their lives during the avalanche.\n:: Unsure Footing. :: Mother Tusk asks the characters to rescue one of her children, an awakened otter named Spritzel, who's been spying on Easthaven. The characters quickly find Spritzel, and some of his otter friends, fleeing from a pack of wolves.\n:: What Does Spritzel Look Like? :: \"He's a white-furred otter with a brown patch above his right eye, and he wears a pearl earring.\"\n\n## Collapsable Details\n\nCollapsable block of content with a heading.\n\n**Parameters**\n- 'open' when present, the block will be open by default\n\n[[ Actions open\n:: Bite. :: *Melee Weapon Attack:* #+5 to hit, reach 5 ft., one target. *Hit:* 2d6+3% piercing damage. If the target is a creature, it must succeed on a dc13|strength saving throw or be knocked prone.\n]]\n\n## Details Blocks\n\nStylized blocks intended to convey supplementary or important information to the players and dungeon master. \n\n**Parameters**\n- 'narrative' blocks are meant to be read aloud to the players\n- 'info' blocks are for information intended for only the dungeon master\n- 'thing' blocks can be used to create NPCs, items, spells, locations, etc.\n\n{{ narrative\nTravel is incredibly difficult in the deep snow. A bitter wind cuts through your clothing, and ice crystals riding the strong breeze sting your eyes.\n}}\n\n{{ info\n#### Lightning in Icewind Dale\nUnless otherwise noted in the adventure, daytime hours\nprovide dim light outdoors, while the nighttime hours are\ndark. The permanent dusk of Auril's curse makes the promise\nof sunlight seem a teasing possibility, but the sun never\nbreaks the horizon.\n}}\n\n{{ thing\n### Spritzel (SPRIT-zell)\n\nThe awakened otter likes to wear jewelry and generally\nmake a spectacle of himself.\n\n:: What They Want. :: To brave danger and find shiny things.\n:: Irrepressible. :: As an awakened animal, Spritzel knows he's going to die. He doesn't want to die any time soon, but he wants to die spectacularly and for a good cause.\n}}\n\n## Dialog\n\nStylized text useful for distinguishing dialog and speech.\n\n\"He's a white-furred otter with a brown patch above his right eye, and he wears a pearl earring.\"\n\n## Dice Rolls\n\n_Dice rolls are scaled with difficulty._\n\nShortcuts for creating dice rolls, with averages automatically included.\n\n- 1d2\n- 1d4+2\n- 1d6-4\n- 1d8+6%~\n\n## Difficulty Checks\n\n_Difficulty checks are scaled with difficulty._\n\nShortcuts for creating difficulty checks.\n\n- dc10\n- dc|perception\n- dc13|strength\n- dc10|nature|animal_handling\n- dc10%~\n\n## Dynamic Values\n\nStatic values that scale with difficulty.\n\n_Hint: values that start with two #s are still stylized, but are not scaled with difficulty._\n\n- +3\n- #-4\n- ##5\n- #+6%~\n\n## Inline Checkboxes\n\nInline checkboxes will retain their checked state, stored in the browser's local storage.\n\n- [ ] I stay checked when you refresh the page\n\n## Tables\n\nDungeon Press adds two special table features to help you generate content efficiently.\n\n### Roll Tables\n\nYou can create a roll table by prefixing the first column heading with 'd<NUMBER>'. Roll tables will automatically generate a column for the number value of the roll result.\n\n| d4 Treasure Chest Contents |\n|----------------------------|\n| 100 gp                     |\n| +1 Dagger                  |\n| Potion of Healing x 5      |\n| Just a rock                |\n\n### Random Tables\n\nRandom tables take this a step further. Replace the 'd' with an 'r' and Dungeon Press will randomly pick a number of rows from the table equal to the number of outcomes possible given the dice. \n\nCreate more rows than there are outcomes to make random pools of content. Rows are picked based on a random seed which can be configured by the author or overridden by the player in the UI.\n\n| r4 Treasure Chest Contents |\n|----------------------------|\n| 100 gp                     |\n| +1 Dagger                  |\n| Potion of Healing x 5      |\n| Just a rock                |\n| Sack full of beans         |\n| Empty bottle               |\n| Chipped emerald            |\n| A miniature horse saddle   |\n\n# Example Blocks\n\n{{ thing\n\n## Mother Tusk\n\nMother Tusk was awakened by a powerful goliath druid\nto act as a companion and confidant. The druid became\ncorrupted, and Mother Tusk saw what he was doing to do\nto the animals in her care. She led the animals to safety,\nand she's been trying to protect them for the last several\nmonths.\n\n:: What They Want. :: To keep her charges safe.\n:: Caring, but Ruthless. :: Mother Tusk cares more for her animals than for humans, and she'll happily put humans at risk for her family.\n\n}}\n\n{{ thing\n\n## Dire Wolf\n#### Large beast, unaligned\n\n---\n\n- **Armor Class** 14 (natural armor)\n- **Hit Points** 5d10+10%\n- **Speed** 50 ft.\n\n---\n\n||17,15,15,3,12,7||\n\n---\n\n- **Skills** Perception #+3, Stealth #+4\n- **Senses** passive Perception ##13\n- **Languages** —\n- **Challenge** 1 (200 XP)\n\n---\n\n:: Keen Hearing and Smell. :: The wolf has advantage on dc|perception checks that rely on hearing or smell.\n:: Pack Tactics. :: The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.\n\n[[ Actions open\n:: Bite. :: *Melee Weapon Attack:* #+5 to hit, reach 5 ft., one target. *Hit:* 2d6+3% piercing damage. If the target is a creature, it must succeed on a dc13|strength saving throw or be knocked prone.\n]]\n\n}}\n\n{{ thing\n\n## Boots of False Tracks\n#### Wondrous item, common\n\nThese comfortable, fur-lined boots are embroidered with\ngaudy, but worthless, gems.\n\nOnly humanoids can wear these boots. While wearing the\nboots, you can choose to have them leave tracks like those\nof another kind of humanoid of your size.\n\n*Xanathar's Guide to Everything, p. 136*\n\n}}\n","toc":[{"href":"welcome-to-dungeon-press","text":"Welcome to Dungeon Press","level":1},{"href":"getting-started","text":"Getting Started","level":2},{"href":"typography","text":"Typography","level":1},{"href":"table-of-contents","text":"Table of Contents","level":2},{"href":"examples","text":"Examples","level":2},{"href":"heading-level-2","text":"Heading Level 2","level":2},{"href":"heading-level-3","text":"Heading Level 3","level":3},{"href":"example-media","text":"Example Media","level":2},{"href":"markdown-features","text":"Markdown Features","level":1},{"href":"ability-scores","text":"Ability Scores","level":2},{"href":"description-list","text":"Description List","level":2},{"href":"collapsable-details","text":"Collapsable Details","level":2},{"href":"details-blocks","text":"Details Blocks","level":2},{"href":"spritzel-sprit-zell-","text":"Spritzel (SPRIT-zell)","level":3},{"href":"dialog","text":"Dialog","level":2},{"href":"dice-rolls","text":"Dice Rolls","level":2},{"href":"difficulty-checks","text":"Difficulty Checks","level":2},{"href":"dynamic-values","text":"Dynamic Values","level":2},{"href":"inline-checkboxes","text":"Inline Checkboxes","level":2},{"href":"tables","text":"Tables","level":2},{"href":"roll-tables","text":"Roll Tables","level":3},{"href":"random-tables","text":"Random Tables","level":3},{"href":"example-blocks","text":"Example Blocks","level":1},{"href":"mother-tusk","text":"Mother Tusk","level":2},{"href":"dire-wolf","text":"Dire Wolf","level":2},{"href":"boots-of-false-tracks","text":"Boots of False Tracks","level":2}]}</script>
+<script>window.__CONFIG__ = {"build":{"baseUrl":"https://www.dungeonpress.com/"},"template":{"heroImgSrc":"/images/hero.webp","footerLinks":[{"text":"Website","link":"https://www.dungeonpress.com"}],"socialLinks":[{"icon":"github","link":"https://github.com/twocatmoon/dungeon-press"}]}}</script>
+
+        <div id="root"><div class="DungeonPress"><header><div><div><div class="HeaderTitle"><img src="/icon.svg" alt="Dungeon Press Adventure"/><span>Dungeon Press Adventure</span></div></div><aside><nav class="HeaderNav"><ul><li class="--hide --inFlMedium --inFlWide">An adventure by <a href="https://www.dungeonpress.com" target="_blank" rel="noopener noreferrer">Two-Cat Moon</a></li><li><span class="--hide --inFlSmall --inFlMedium"><svg name="book_x16" class="Icon Icon--x16"><use xlink:href="#book_x16"></use></svg></span><span><svg name="settings_x16" class="Icon Icon--x16"><use xlink:href="#settings_x16"></use></svg></span><span><svg name="note_x16" class="Icon Icon--x16"><use xlink:href="#note_x16"></use></svg></span></li></ul></nav></aside></div></header><div><main><article><div class="Hero"><div class="Hero__Image"><img src="/images/hero.webp" alt="Dungeon Press Adventure"/></div><div class="AdventureContent"><h1>Dungeon Press Adventure</h1><h6>An adventure created with Dungeon Press</h6><div><p>Dungeon Press is a static site generator that leverages the simplicity and flexibility of Markdown to create interactive tabletop adventures with a clean, minimalistic design. It&#39;s designed to cater to both creators and players by offering advanced formatting features, dynamic content adjustment, and easy publishing options.</p>
+</div><h4>Credits</h4><dl class="Hero__Credits"><dt>Developer &amp; Designer</dt><dd><a href="https://www.jordanranson.com" target="_blank" rel="noopener noreferrer">Jordan Ranson</a></dd></dl></div></div><div class="AdventureContent"><h2 id="welcome-to-dungeon-press" tabindex="-1" data-heading>
+                    <a name="welcome-to-dungeon-press" class="anchor" href="#welcome-to-dungeon-press">#</a>
+                    Welcome to Dungeon Press
+                </h2><p>Thank you for embarking on an adventure with Dungeon Press, where your creativity brings to life tales of courage, mystery, and magic. Whether you&#39;re a seasoned dungeon master or a newcomer to tabletop storytelling, this guide is your first step towards crafting memorable experiences for your players. </p>
+<h3 id="getting-started" tabindex="-1" data-heading>
+                    <a name="getting-started" class="anchor" href="#getting-started">#</a>
+                    Getting Started
+                </h3><dl>
+<dt><strong>Familiarize yourself with Markdown syntax</strong></dt><dd>Dungeon Press utilizes Markdown for all adventure creation. A quick guide is provided under the <a href="#markdown-features">Markdown Features</a> section.</dd>
+<dt><strong>Explore example blocks</strong></dt><dd>Check out the pre-defined blocks like &#39;thing&#39;, &#39;narrative&#39;, and &#39;info&#39; to understand how to structure your adventure&#39;s content.</dd>
+<dt><strong>Customize your adventure</strong></dt><dd>Use the dynamic content features, such as dice rolls and difficulty checks, to tailor challenges to your players&#39; levels.</dd>
+<dt><strong>Preview your adventure</strong></dt><dd>Utilize Dungeon Press&#39;s live preview feature to see how your adventure will appear to players and make real-time adjustments.</dd>
+<dt><strong>Publish and share</strong></dt><dd>Once satisfied, follow the steps in the <a href="https://github.com/twocatmoon/dungeon-press/blob/trunk/README.md">readme</a> to share your creation with the world or with your gaming group.</dd>
+</dl><p>Remember, the essence of Dungeon Press is to make adventure creation as fun as the adventures themselves. Happy creating!</p>
+<h2 id="typography" tabindex="-1" data-heading>
+                    <a name="typography" class="anchor" href="#typography">#</a>
+                    Typography
+                </h2><h3 id="table-of-contents" tabindex="-1" data-heading>
+                    <a name="table-of-contents" class="anchor" href="#table-of-contents">#</a>
+                    Table of Contents
+                </h3><p>Heading levels between 1 and 3 will automatically be added to the table of contents. These headings can also be externally linked to via fragment identifiers.</p>
+<h3 id="examples" tabindex="-1" data-heading>
+                    <a name="examples" class="anchor" href="#examples">#</a>
+                    Examples
+                </h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus neque vel turpis ultricies ornare. <strong>This sentence is bold.</strong> Pellentesque neque orci, tincidunt convallis magna eu, pharetra gravida arcu. Etiam non metus vel lorem pretium scelerisque. </p>
+<p><em>"This sentence is dialog."</em> Nullam tristique arcu ante, ut interdum justo viverra id. Suspendisse nec nisl vel mauris pulvinar ultrices. </p>
+<h3 id="heading-level-2" tabindex="-1" data-heading>
+                    <a name="heading-level-2" class="anchor" href="#heading-level-2">#</a>
+                    Heading Level 2
+                </h3><h6 id="tagline-or-subheader" tabindex="-1" data-heading>
+                    
+                    Tagline or Subheader
+                </h6><p>Pellentesque neque orci, tincidunt convallis magna eu, pharetra gravida arcu. Etiam non metus vel lorem pretium scelerisque. <a href="https://www.dungeonpress.com">This sentence is a link</a>. Nullam tristique arcu ante, ut interdum justo viverra id. Suspendisse nec nisl vel mauris pulvinar ultrices. </p>
+<h4 id="heading-level-3" tabindex="-1" data-heading>
+                    <a name="heading-level-3" class="anchor" href="#heading-level-3">#</a>
+                    Heading Level 3
+                </h4><p>Nunc convallis, nibh eu eleifend commodo, nisl metus sodales dui, quis tincidunt felis sem et nisi. Nullam eu metus sapien. <a href="#typography">This sentence links internally</a>. Donec eu velit orci. Fusce quis lorem vitae urna tempus condimentum. Cras elementum dui fermentum enim fringilla facilisis. </p>
+<hr>
+<h5 id="heading-level-4" tabindex="-1" data-heading>
+                    
+                    Heading Level 4
+                </h5><p>Proin vulputate leo lorem, non finibus leo condimentum in. Aliquam tortor mi, congue nec luctus eget, vulputate quis arcu. </p>
+<h3 id="example-media" tabindex="-1" data-heading>
+                    <a name="example-media" class="anchor" href="#example-media">#</a>
+                    Example Media
+                </h3><p><img src="/images/map.webp" alt="Alt text" title="Map"></p>
+<h2 id="markdown-features" tabindex="-1" data-heading>
+                    <a name="markdown-features" class="anchor" href="#markdown-features">#</a>
+                    Markdown Features
+                </h2><h3 id="ability-scores" tabindex="-1" data-heading>
+                    <a name="ability-scores" class="anchor" href="#ability-scores">#</a>
+                    Ability Scores
+                </h3><p><em>Ability scores are scaled with difficulty.</em></p>
+<p>Creates an ability score table with modifiers.</p>
+
+            <ability-scores scores="12,15,12,3,12,6">
+                
+                        <span>
+                            <span>STR</span>
+                            <span>
+                                12 (+1)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>DEX</span>
+                            <span>
+                                15 (+2)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>CON</span>
+                            <span>
+                                12 (+1)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>INT</span>
+                            <span>
+                                3 (-4)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>WIS</span>
+                            <span>
+                                12 (+1)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>CHA</span>
+                            <span>
+                                6 (-2)
+                            </span>
+                        </span>
+                    
+            </ability-scores>
+        <hr>
+
+            <ability-scores scores="17,15,15,3,12,7">
+                
+                        <span>
+                            <span>STR</span>
+                            <span>
+                                17 (+3)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>DEX</span>
+                            <span>
+                                15 (+2)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>CON</span>
+                            <span>
+                                15 (+2)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>INT</span>
+                            <span>
+                                3 (-4)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>WIS</span>
+                            <span>
+                                12 (+1)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>CHA</span>
+                            <span>
+                                7 (-2)
+                            </span>
+                        </span>
+                    
+            </ability-scores>
+        <h3 id="description-list" tabindex="-1" data-heading>
+                    <a name="description-list" class="anchor" href="#description-list">#</a>
+                    Description List
+                </h3><p>Indented description list item with a bolded inline heading.</p>
+<p><em>Hint: try using quotes with description lists to build dialog options.</em></p>
+<dl>
+<dt>Prologue—Avalanche.</dt><dd>An avalanche threatens the characters, but they&#39;re led to safety by an odd muskrat. They then meet Mother Tusk who briefs them on four tasks she&#39;d like them to undertake in return for saving their lives during the avalanche.</dd>
+<dt>Unsure Footing.</dt><dd>Mother Tusk asks the characters to rescue one of her children, an awakened otter named Spritzel, who&#39;s been spying on Easthaven. The characters quickly find Spritzel, and some of his otter friends, fleeing from a pack of wolves.</dd>
+<dt>What Does Spritzel Look Like?</dt><dd><em>"He's a white-furred otter with a brown patch above his right eye, and he wears a pearl earring."</em></dd>
+</dl><h3 id="collapsable-details" tabindex="-1" data-heading>
+                    <a name="collapsable-details" class="anchor" href="#collapsable-details">#</a>
+                    Collapsable Details
+                </h3><p>Collapsable block of content with a heading.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li>&#39;open&#39; when present, the block will be open by default</li>
+</ul>
+<details open>
+    <summary>
+        <hr />
+        <span>Actions</span>
+    </summary>
+    <dl>
+<dt>Bite.</dt><dd><em>Melee Weapon Attack:</em> <span>+5</span> to hit, reach 5 ft., one target. <em>Hit:</em> <dice-roll roll=2d6+3>10 (2d6 + 3)</dice-roll> piercing damage. If the target is a creature, it must succeed on a <dice-roll challenge="13" skills="strength">DC 13 Strength</dice-roll> saving throw or be knocked prone.</dd>
+</dl>
+</details><h3 id="details-blocks" tabindex="-1" data-heading>
+                    <a name="details-blocks" class="anchor" href="#details-blocks">#</a>
+                    Details Blocks
+                </h3><p>Stylized blocks intended to convey supplementary or important information to the players and dungeon master. </p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li>&#39;narrative&#39; blocks are meant to be read aloud to the players</li>
+<li>&#39;info&#39; blocks are for information intended for only the dungeon master</li>
+<li>&#39;thing&#39; blocks can be used to create NPCs, items, spells, locations, etc.</li>
+</ul>
+<details-block type="narrative"><p>Travel is incredibly difficult in the deep snow. A bitter wind cuts through your clothing, and ice crystals riding the strong breeze sting your eyes.</p>
+</details-block><details-block type="info"><h5 id="lightning-in-icewind-dale" tabindex="-1" data-heading>
+                    
+                    Lightning in Icewind Dale
+                </h5><p>Unless otherwise noted in the adventure, daytime hours
+provide dim light outdoors, while the nighttime hours are
+dark. The permanent dusk of Auril&#39;s curse makes the promise
+of sunlight seem a teasing possibility, but the sun never
+breaks the horizon.</p>
+</details-block><details-block type="thing"><h4 id="spritzel-sprit-zell-" tabindex="-1" data-heading>
+                    <a name="spritzel-sprit-zell-" class="anchor" href="#spritzel-sprit-zell-">#</a>
+                    Spritzel (SPRIT-zell)
+                </h4><p>The awakened otter likes to wear jewelry and generally
+make a spectacle of himself.</p>
+<dl>
+<dt>What They Want.</dt><dd>To brave danger and find shiny things.</dd>
+<dt>Irrepressible.</dt><dd>As an awakened animal, Spritzel knows he&#39;s going to die. He doesn&#39;t want to die any time soon, but he wants to die spectacularly and for a good cause.</dd>
+</dl></details-block><h3 id="dialog" tabindex="-1" data-heading>
+                    <a name="dialog" class="anchor" href="#dialog">#</a>
+                    Dialog
+                </h3><p>Stylized text useful for distinguishing dialog and speech.</p>
+<p><em>"He's a white-furred otter with a brown patch above his right eye, and he wears a pearl earring."</em></p>
+<h3 id="dice-rolls" tabindex="-1" data-heading>
+                    <a name="dice-rolls" class="anchor" href="#dice-rolls">#</a>
+                    Dice Rolls
+                </h3><p><em>Dice rolls are scaled with difficulty.</em></p>
+<p>Shortcuts for creating dice rolls, with averages automatically included.</p>
+<ul>
+<li><dice-roll roll=1d2 0>1 (1d2)</dice-roll></li>
+<li><dice-roll roll=1d4+2>4 (1d4 + 2)</dice-roll></li>
+<li><dice-roll roll=1d6-4>-1 (1d6 - 4)</dice-roll></li>
+<li><dice-roll roll=1d8+6>10 (1d8 + 6)</dice-roll></li>
+</ul>
+<h3 id="difficulty-checks" tabindex="-1" data-heading>
+                    <a name="difficulty-checks" class="anchor" href="#difficulty-checks">#</a>
+                    Difficulty Checks
+                </h3><p><em>Difficulty checks are scaled with difficulty.</em></p>
+<p>Shortcuts for creating difficulty checks.</p>
+<ul>
+<li><dice-roll challenge="10" skills="">DC 10 </dice-roll></li>
+<li><dice-roll challenge="-1" skills="perception">Wisdom (Perception)</dice-roll></li>
+<li><dice-roll challenge="13" skills="strength">DC 13 Strength</dice-roll></li>
+<li><dice-roll challenge="10" skills="nature,animal_handling">DC 10 Intelligence (Nature) or Wisdom (Animal Handling)</dice-roll></li>
+<li><dice-roll challenge="11" skills="">DC 11 </dice-roll></li>
+</ul>
+<h3 id="dynamic-values" tabindex="-1" data-heading>
+                    <a name="dynamic-values" class="anchor" href="#dynamic-values">#</a>
+                    Dynamic Values
+                </h3><p>Static values that scale with difficulty.</p>
+<p><em>Hint: values that start with two #s are still stylized, but are not scaled with difficulty.</em></p>
+<ul>
+<li>+3</li>
+<li><span>-4</span></li>
+<li><span>5</span></li>
+<li><span>+6</span></li>
+</ul>
+<h3 id="inline-checkboxes" tabindex="-1" data-heading>
+                    <a name="inline-checkboxes" class="anchor" href="#inline-checkboxes">#</a>
+                    Inline Checkboxes
+                </h3><p>Inline checkboxes will retain their checked state, stored in the browser&#39;s local storage.</p>
+<ul>
+<li><input data-id="f95c6" type="checkbox" /> I stay checked when you refresh the page</li>
+</ul>
+<h3 id="tables" tabindex="-1" data-heading>
+                    <a name="tables" class="anchor" href="#tables">#</a>
+                    Tables
+                </h3><p>Dungeon Press adds two special table features to help you generate content efficiently.</p>
+<h4 id="roll-tables" tabindex="-1" data-heading>
+                    <a name="roll-tables" class="anchor" href="#roll-tables">#</a>
+                    Roll Tables
+                </h4><p>You can create a roll table by prefixing the first column heading with &#39;d<NUMBER>&#39;. Roll tables will automatically generate a column for the number value of the roll result.</p>
+<table>
+<thead>
+<tr>
+<th align="center">d4 </th>
+<th>Treasure Chest Contents</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>100 gp</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>+1 Dagger</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>Potion of Healing x 5</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>Just a rock</td>
+</tr>
+</tbody></table>
+<h4 id="random-tables" tabindex="-1" data-heading>
+                    <a name="random-tables" class="anchor" href="#random-tables">#</a>
+                    Random Tables
+                </h4><p>Random tables take this a step further. Replace the &#39;d&#39; with an &#39;r&#39; and Dungeon Press will randomly pick a number of rows from the table equal to the number of outcomes possible given the dice. </p>
+<p>Create more rows than there are outcomes to make random pools of content. Rows are picked based on a random seed which can be configured by the author or overridden by the player in the UI.</p>
+<table>
+<thead>
+<tr>
+<th>Treasure Chest Contents</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>100 gp</td>
+</tr>
+<tr>
+<td>Chipped emerald</td>
+</tr>
+<tr>
+<td>Just a rock</td>
+</tr>
+<tr>
+<td>Empty bottle</td>
+</tr>
+</tbody></table>
+<h2 id="example-blocks" tabindex="-1" data-heading>
+                    <a name="example-blocks" class="anchor" href="#example-blocks">#</a>
+                    Example Blocks
+                </h2><details-block type="thing"><h3 id="mother-tusk" tabindex="-1" data-heading>
+                    <a name="mother-tusk" class="anchor" href="#mother-tusk">#</a>
+                    Mother Tusk
+                </h3><p>Mother Tusk was awakened by a powerful goliath druid
+to act as a companion and confidant. The druid became
+corrupted, and Mother Tusk saw what he was doing to do
+to the animals in her care. She led the animals to safety,
+and she&#39;s been trying to protect them for the last several
+months.</p>
+<dl>
+<dt>What They Want.</dt><dd>To keep her charges safe.</dd>
+<dt>Caring, but Ruthless.</dt><dd>Mother Tusk cares more for her animals than for humans, and she&#39;ll happily put humans at risk for her family.</dd>
+</dl></details-block><details-block type="thing"><h3 id="dire-wolf" tabindex="-1" data-heading>
+                    <a name="dire-wolf" class="anchor" href="#dire-wolf">#</a>
+                    Dire Wolf
+                </h3><h5 id="large-beast-unaligned" tabindex="-1" data-heading>
+                    
+                    Large beast, unaligned
+                </h5><hr>
+<ul>
+<li><strong>Armor Class</strong> 14 (natural armor)</li>
+<li><strong>Hit Points</strong> <dice-roll roll=5d10+10>37 (5d10 + 10)</dice-roll></li>
+<li><strong>Speed</strong> 50 ft.</li>
+</ul>
+<hr>
+
+            <ability-scores scores="17,15,15,3,12,7">
+                
+                        <span>
+                            <span>STR</span>
+                            <span>
+                                17 (+3)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>DEX</span>
+                            <span>
+                                15 (+2)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>CON</span>
+                            <span>
+                                15 (+2)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>INT</span>
+                            <span>
+                                3 (-4)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>WIS</span>
+                            <span>
+                                12 (+1)
+                            </span>
+                        </span>
+                    
+                        <span>
+                            <span>CHA</span>
+                            <span>
+                                7 (-2)
+                            </span>
+                        </span>
+                    
+            </ability-scores>
+        <hr>
+<ul>
+<li><strong>Skills</strong> Perception <span>+3</span>, Stealth <span>+4</span></li>
+<li><strong>Senses</strong> passive Perception <span>13</span></li>
+<li><strong>Languages</strong> —</li>
+<li><strong>Challenge</strong> 1 (200 XP)</li>
+</ul>
+<hr>
+<dl>
+<dt>Keen Hearing and Smell.</dt><dd>The wolf has advantage on <dice-roll challenge="-1" skills="perception">Wisdom (Perception)</dice-roll> checks that rely on hearing or smell.</dd>
+<dt>Pack Tactics.</dt><dd>The wolf has advantage on an attack roll against a creature if at least one of the wolf&#39;s allies is within 5 feet of the creature and the ally isn&#39;t incapacitated.</dd>
+</dl><details open>
+    <summary>
+        <hr />
+        <span>Actions</span>
+    </summary>
+    <dl>
+<dt>Bite.</dt><dd><em>Melee Weapon Attack:</em> <span>+5</span> to hit, reach 5 ft., one target. <em>Hit:</em> <dice-roll roll=2d6+3>10 (2d6 + 3)</dice-roll> piercing damage. If the target is a creature, it must succeed on a <dice-roll challenge="13" skills="strength">DC 13 Strength</dice-roll> saving throw or be knocked prone.</dd>
+</dl>
+</details></details-block><details-block type="thing"><h3 id="boots-of-false-tracks" tabindex="-1" data-heading>
+                    <a name="boots-of-false-tracks" class="anchor" href="#boots-of-false-tracks">#</a>
+                    Boots of False Tracks
+                </h3><h5 id="wondrous-item-common" tabindex="-1" data-heading>
+                    
+                    Wondrous item, common
+                </h5><p>These comfortable, fur-lined boots are embroidered with
+gaudy, but worthless, gems.</p>
+<p>Only humanoids can wear these boots. While wearing the
+boots, you can choose to have them leave tracks like those
+of another kind of humanoid of your size.</p>
+<p><em>Xanathar&#39;s Guide to Everything, p. 136</em></p>
+</details-block></div><footer><div class="FooterNav"><hr/><div><p><strong>Dungeon Press Adventure</strong><br/>© <span>2024</span> <a href="https://www.dungeonpress.com" rel="noreferrer" target="_blank"><strong>Two-Cat Moon</strong></a></p><ul><li><h6>Links</h6><nav><p><a href="https://www.dungeonpress.com" rel="noopener noreferrer" target="_blank">Website</a></p></nav></li><li><h6>Socials</h6><a href="https://github.com/twocatmoon/dungeon-press" rel="noopener noreferrer" target="_blank"><span class="SocialIcon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></span></a></li></ul><p><small>v. <span>1.0.0</span></small></p><br/><br/><p>Powered by <a href="https://www.dungeonpress.com" rel="noopener noreferrer" target="_blank"><strong>Dungeon Press</strong></a></p></div></div></footer></article><aside><nav class="TableOfContents"><h6>Table of Contents</h6><div><ol><li data-level="1"><a href="#welcome-to-dungeon-press">Welcome to Dungeon Press</a></li><li data-level="2"><a href="#getting-started">Getting Started</a></li><li data-level="1"><a href="#typography">Typography</a></li><li data-level="2"><a href="#table-of-contents">Table of Contents</a></li><li data-level="2"><a href="#examples">Examples</a></li><li data-level="2"><a href="#heading-level-2">Heading Level 2</a></li><li data-level="3"><a href="#heading-level-3">Heading Level 3</a></li><li data-level="2"><a href="#example-media">Example Media</a></li><li data-level="1"><a href="#markdown-features">Markdown Features</a></li><li data-level="2"><a href="#ability-scores">Ability Scores</a></li><li data-level="2"><a href="#description-list">Description List</a></li><li data-level="2"><a href="#collapsable-details">Collapsable Details</a></li><li data-level="2"><a href="#details-blocks">Details Blocks</a></li><li data-level="3"><a href="#spritzel-sprit-zell-">Spritzel (SPRIT-zell)</a></li><li data-level="2"><a href="#dialog">Dialog</a></li><li data-level="2"><a href="#dice-rolls">Dice Rolls</a></li><li data-level="2"><a href="#difficulty-checks">Difficulty Checks</a></li><li data-level="2"><a href="#dynamic-values">Dynamic Values</a></li><li data-level="2"><a href="#inline-checkboxes">Inline Checkboxes</a></li><li data-level="2"><a href="#tables">Tables</a></li><li data-level="3"><a href="#roll-tables">Roll Tables</a></li><li data-level="3"><a href="#random-tables">Random Tables</a></li><li data-level="1"><a href="#example-blocks">Example Blocks</a></li><li data-level="2"><a href="#mother-tusk">Mother Tusk</a></li><li data-level="2"><a href="#dire-wolf">Dire Wolf</a></li><li data-level="2"><a href="#boots-of-false-tracks">Boots of False Tracks</a></li></ol></div></nav></aside></main></div><aside><div class="NoteEditor "></div></aside></div></div>
+        
+    </body>
+</html>

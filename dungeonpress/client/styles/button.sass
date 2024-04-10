@@ -1,0 +1,40 @@
+.button
+    appearance: none
+    border: none
+    font-family: var(--font-family)
+    font-weight: var(--control-font-weight)
+    font-size: var(--control-font-size-0)
+    padding: 0.5em 1em
+    border-radius: 4px
+    cursor: pointer
+    background: none
+    color: var(--font-color)
+    transition: opacity 100ms ease-in-out
+
+    &:hover
+        opacity: 0.85
+
+    &--submit,
+    &[type='submit']
+        background-color: var(--control-primary-color)
+        color: var(--control-primary-color-contrast)
+        padding: 0.5em 1em
+
+    &--primary
+        background-color: var(--control-primary-color)
+        color: var(--control-primary-color-contrast)
+        padding: 0.5em 1em
+
+    &--secondary
+        background-color: var(--control-secondary-color)
+        color: var(--control-primary-color-contrast)
+        padding: 0.5em 1em
+
+    &--small
+        padding: 0.25em 0.65em
+        border-radius: 100px
+
+    &[disabled]
+        opacity: 0.5
+        cursor: not-allowed
+        filter: grayscale(.85)

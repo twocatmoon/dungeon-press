@@ -1,0 +1,40 @@
+.NoteForm
+    padding: 1rem
+
+    textarea
+        appearance: none
+        border: none
+        font-family: var(--font-family)
+        font-weight: var(--control-font-weight)
+        margin-top: var(--spacing-1)
+        font-size: var(--control-font-size-1)
+        color: var(--control-font-color)
+        background-color: var(--control-bg-color-focus)
+        width: 100%
+        resize: vertical
+        min-height: 5rem
+        border-radius: 3px
+
+        &:focus
+            outline: solid 2px var(--control-primary-color)
+
+    footer
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        margin-top: var(--spacing-1)
+
+        .button
+            margin-left: var(--spacing-0)
+
+.NoteForm__Selection
+    padding: var(--spacing-1)
+    border: solid 1px var(--border-color-light)
+    box-shadow: 0 1px 3px var(--control-shadow-color)
+    border-radius: 3px
+    font-size: var(--control-font-size-0)
+    user-select: none
+
+    span
+        background-color: var(--theme-shade-1)
+        color: var(--theme-bg-color)

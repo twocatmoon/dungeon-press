@@ -1,0 +1,83 @@
+@import '../../styles/util'
+
+.HeaderNav
+    margin-right: var(--spacing-1)
+    font-weight: var(--control-font-weight)
+    
+    .DropdownList > li > label
+        > aside, > span
+            @include isSmallDevice
+                flex: 1
+        > aside
+            @include isSmallDevice
+                display: flex
+                justify-content: end
+
+    > ul
+        display: flex
+        align-items: center
+
+        > li
+            display: inline-flex
+            align-items: center
+
+            &:not(:last-child)::after
+                margin-right: var(--spacing-2)
+                margin-left: var(--spacing-2)
+                width: 1px
+                height: 24px
+                background-color: var(--border-color-light)
+                content: ''
+                display: inline-flex
+            
+            > a
+                color: var(--font-heading-color)
+                text-decoration: none
+                font-weight: var(--control-strong-weight)
+                cursor: pointer
+                transition: color 100ms ease-in-out
+
+                &:hover
+                    color: var(--font-strong-color)
+
+            > a,
+            > span
+                display: inline-flex
+                fill: var(--font-color)
+                position: relative
+                transition: color 100ms ease-in-out, fill 100ms ease-in-out
+
+                .Icon
+                    cursor: pointer
+
+                .Icon + .Badge
+                    position: absolute
+                    top: 0
+                    right: 0
+                    transform: translate(50%, -50%)
+
+                .Dropdown
+                    cursor: default
+                    position: fixed
+                    top: 3rem
+                    left: var(--spacing-1)
+                    right: var(--spacing-1)
+                    max-height: calc(100vh - 1rem - 3rem)
+
+                    @include isAtLeastMediumDevice
+                        position: absolute
+                        top: 100%
+                        left: auto
+                        right: 0
+                        margin-top: var(--spacing-1)
+                        margin-right: calc(var(--spacing-2) * -1)
+
+                    .TableOfContents
+                        margin: 0 var(--spacing-0)
+                        white-space: nowrap
+
+                &:hover
+                    fill: var(--control-primary-color)
+
+                &:not(:last-child)
+                    margin-right: var(--spacing-2)

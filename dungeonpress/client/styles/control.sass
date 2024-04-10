@@ -1,0 +1,58 @@
+.control
+    appearance: none
+    height: 1.6rem
+    display: inline-flex
+    position: relative
+    user-select: none
+
+    *
+        appearance: none
+        
+    input,
+    select
+        font-family: var(--font-family)
+        font-size: var(--control-font-size-0)
+        font-weight: var(--control-font-weight)
+        color: var(--control-font-color)
+
+    input[type="text"],
+    select
+        height: 1.6rem
+        width: 100%
+        display: inline-flex
+        border: solid 1px transparent
+        border-radius: 6px
+        background-color: var(--control-bg-color)
+        padding: 0 0.5em
+        transition: border-color 100ms ease-in-out, outline 100ms ease-in-out
+
+        &:hover
+            border-color: var(--control-primary-border-color-light)
+
+        &:focus
+            background-color: var(--control-bg-color-focus)
+            border-color: var(--control-primary-border-color-dark)
+            outline: solid 2px var(--control-primary-border-color-light)
+
+    > aside
+        position: absolute
+        top: 0
+        right: 0
+        height: 100%
+        display: inline-flex
+        align-items: center
+        padding: 0 0.5em
+        pointer-events: none
+
+        *
+            pointer-events: auto
+
+    select
+        cursor: pointer
+        
+        + aside
+            fill: var(--font-color-light)
+    
+        &:hover + aside,
+        &:focus + aside
+            fill: var(--border-color-dark)

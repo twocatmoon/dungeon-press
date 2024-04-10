@@ -1,0 +1,36 @@
+@import '../../styles/util'
+
+.TableOfContents
+    color: var(--font-color)
+    font-size: var(--control-font-size-0)
+    display: flex
+    flex-direction: column
+
+    h6
+        font-weight: var(--font-strong-weight)
+        color: var(--font-strong-color)
+
+    div
+        flex: 1
+
+    a
+        color: var(--font-color)
+        text-decoration: none
+        position: relative
+        display: block
+
+        &.--active
+            color: var(--font-strong-color)
+
+    ol
+        margin-top: var(--spacing-0)
+
+        li
+            margin: 0.2rem 0
+            
+            a
+                padding-left: 0.8rem
+
+            &[data-level='1']
+                a
+                    padding-left: 0

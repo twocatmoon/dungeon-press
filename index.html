@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{attributes.title}} | {{attributes.tagline}}</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="{{attributes.description}}" />
+        <meta name="keywords" content="{{attributes.tags}}" />
+        <meta property="og:title" content="{{attributes.title}}">
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="{{template.heroImgSrc}}" />
+        <meta property="og:url" content="{{template.baseUrl}}" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "{{attributes.author}}",
+                "url": "{{attributes.authorUrl}}",
+                "logo": "/icon.svg"
+            }
+        </script>              
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "{{attributes.title}} | {{attributes.tagline}}",
+                "author": {
+                    "@type": "Person",
+                    "name": "{{attributes.author}}"
+                },
+                "datePublished": "{{attributes.modified}}",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "{{attributes.author}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "/icon.svg"
+                    }
+                },
+                "description": "{{attributes.description}}",
+                "image": "{{template.heroImgSrc}}",
+                "articleBody": "{{template.summary}}",
+                "articleSection": [{{template.toc}}],
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{template.baseUrl}}"
+                }
+              }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Dungeon Press",
+                "applicationCategory": "Game application",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0.00",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "softwareVersion": "1.0.0",
+                "description": "TODO",
+                "features": [TODO],
+                "downloadUrl": "https://github.com/twocatmoon/dungeon-press",
+            }
+        </script>
+    </head>
+    <body>
+        {{body}}
+        <div id="root">{{ssrOutput}}</div>
+        <script type="module" src="/dungeonpress/client/app.tsx"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+.HighlightMenu
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    transform: translate(-50%, -100%)
+    display: inline-flex
+    box-shadow: 0 2px 10px 0 var(--control-shadow-color)
+    border-radius: 9px
+    user-select: none
+    transform-origin: 50% 100%
+
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        width: 0.6rem
+        height: 0.6rem
+        pointer-events: none
+        background: var(--font-heading-color)
+        transform:  translateY(-50%) rotate(45deg)
+        margin: 0 auto
+
+    li
+        display: flex
+        align-items: center
+        justify-content: center
+        height: var(--spacing-4)
+        width: var(--spacing-4)
+        cursor: pointer
+        background-color: var(--font-heading-color)
+        fill: var(--control-primary-color-contrast)
+        z-index: 1
+
+        &:first-child
+            border-top-left-radius: 9px
+            border-bottom-left-radius: 9px
+
+        &:last-child
+            border-top-right-radius: 9px
+            border-bottom-right-radius: 9px
+
+        .Icon
+            opacity: 0.85 
+
+        &:hover
+            background-color: var(--control-primary-color)
+            fill: var(--control-primary-color-contrast)
+            transition: opacity 100ms ease-in-out
+
+            .Icon
+                opacity: 1
+
+body[data-theme="dark"]
+    .HighlightMenu
+        li
+            fill: var(--control-font-color)
+            transition: fill 100ms ease-in-out
+
+            &:hover
+                fill: var(--control-primary-color-contrast)

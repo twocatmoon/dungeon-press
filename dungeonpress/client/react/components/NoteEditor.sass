@@ -1,0 +1,104 @@
+.NoteEditor
+    width: 100vw
+    height: 100%
+    display: flex
+    pointer-events: none
+
+    &.--isActive
+        pointer-events: auto
+
+.NoteEditor__Overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: var(--font-color)
+    opacity: 0.25
+
+.NoteEditor__Inner
+    position: relative
+    z-index: 1
+    background-color: var(--control-bg-color-focus)
+    box-shadow: 0 0 10px 0 var(--control-shadow-color)
+    width: 325px
+    display: flex
+    flex-direction: column
+    margin-left: auto
+
+    h5
+        font-size: var(--font-size-3)
+        font-weight: var(--font-heading-weight)
+        color: var(--font-heading-color)
+
+    h6 
+        font-size: var(--font-size-1)
+        font-weight: var(--font-heading-weight)
+        text-transform: uppercase
+        letter-spacing: 0.07em
+        color: var(--font-heading-color)
+
+    > header
+        padding: var(--spacing-1) var(--spacing-2)
+        display: flex
+        align-items: center
+
+        button
+            margin-left: var(--spacing-1)
+
+        aside
+            padding-left: var(--spacing-2)
+            margin-left: auto
+
+        a
+            display: block
+            line-height: 1
+            fill: var(--font-color-light)
+            cursor: pointer
+
+.NoteEditor__Form
+    padding: 0 var(--spacing-2)
+
+    + .NoteEditor__Notes
+        margin-top: var(--spacing-3)
+
+.NoteEditor__Notes
+    padding: 0 var(--spacing-2)
+    flex: 1
+    display: flex
+    flex-direction: column
+    overflow: hidden
+
+    > div
+        flex: 1
+        overflow-x: hidden
+        overflow-y: auto
+        -webkit-overflow-scrolling: touch
+        scrollbar-width: thin
+        padding-bottom: var(--spacing-1)
+
+.NoteEditor__Empty
+    margin: auto
+    text-align: center
+    position: relative
+
+    button
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        box-shadow: 0 2px 4px 0 var(--control-shadow-color)
+
+    img
+        width: 85%
+        height: auto
+        filter: grayscale(1) contrast(0.5) brightness(1.5)
+        mix-blend-mode: luminosity
+        opacity: 0.35
+        margin: var(--spacing-2) auto
+
+body[data-theme="dark"]
+    .NoteEditor__Empty
+        img
+            filter: grayscale(1) contrast(0.5) brightness(1.5) invert(1) 
+            mix-blend-mode: screen

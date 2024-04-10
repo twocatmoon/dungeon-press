@@ -1,0 +1,61 @@
+.Note
+    font-size: var(--control-font-size-0)
+    margin: 1rem 0
+
+    > div
+        font-weight: var(--control-font-weight)
+        display: inline-block
+        line-height: 1.4
+
+        blockquote
+            display: block
+            font-size: 90%
+            padding-left: var(--spacing-1)
+            color: var(--font-color-light)
+            border-left: solid 1px var(--border-color-light)
+            line-height: 1.6
+
+            &:not(:only-child)
+                margin-top: var(--spacing-1)
+
+    &--highlight
+        > div
+            cursor: pointer
+            transition: color 100ms ease-in-out
+            
+            &:hover
+                color: var(--control-primary-color)
+
+    &:not(:last-child)
+        margin-bottom: var(--spacing-2)
+        padding-bottom: var(--spacing-2)
+        border-bottom: solid 1px var(--border-color-light)
+
+    footer
+        display: flex
+        align-items: center
+        line-height: 1
+        margin-top: var(--spacing-0)
+        color: var(--font-color-light)
+
+        aside
+            padding-left: var(--spacing-1)
+            opacity: 0
+            display: flex
+            align-items: center
+            transition: opacity 100ms ease-in-out
+
+            a
+                display: block
+                line-height: 1
+                fill: var(--font-color-light)
+                cursor: pointer
+                margin-right: var(--spacing-0)
+                transition: fill 100ms ease-in-out
+
+                &:hover
+                    fill: var(--control-primary-color)
+
+    &:hover
+        footer > aside
+            opacity: 1

@@ -1,0 +1,60 @@
+@import '../../styles/util'
+    
+.FooterNav
+    font-size: var(--control-font-size-0)
+    background-color: var(--background-color)
+    width: 100%
+
+    > div
+        margin: 50px 0
+
+    hr
+        margin: 0
+        border: none
+        border-top: solid 1px var(--border-color-light)
+
+    strong
+        font-weight: var(--font-strong-weight)
+        color: var(--font-strong-color)
+
+    small
+        font-size: 85%
+        color: var(--font-color-light)
+        display: inline-block
+
+    a
+        cursor: pointer
+        text-decoration: none
+
+    ul
+        display: flex
+        flex-direction: column
+        margin: var(--spacing-2) 0
+
+        @media screen and (min-width: 450px)
+            flex-direction: row
+
+        li
+            margin-top: var(--spacing-2)
+
+            @media screen and (min-width: 450px)
+                flex-direction: row
+                margin-top: 0
+
+                &:not(:last-child)
+                    margin-right: var(--spacing-4)
+
+            > a
+                display: inline-block
+                margin-right: 0.8rem
+                color: var(--font-color)
+
+    nav
+        a
+            text-decoration: underline
+            color: var(--font-color)
+
+    h6
+        font-weight: var(--font-strong-weight)
+        color: var(--font-strong-color)
+        margin-bottom: var(--spacing-0)

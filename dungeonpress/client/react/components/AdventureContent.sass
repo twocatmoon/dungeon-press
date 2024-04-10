@@ -1,0 +1,366 @@
+@import '../../styles/util'
+
+.AdventureContent
+    box-sizing: border-box
+
+    // Headings
+
+    h1, h2, h3, h4, h5, h6
+        position: relative
+        line-height: var(--font-heading-line-height)
+
+        > .anchor
+            display: none
+            opacity: 0
+            position: absolute
+            left: 0
+            bottom: 0
+            text-decoration: none
+            font-weight: bold !important
+            font-style: normal
+            border: none !important
+            transform: translateX(-100%)
+            padding-right: var(--spacing-1)
+            transition: opacity 100ms ease-in-out
+
+            @include isWideDevice
+                display: inline-block
+
+        &:hover > .anchor
+            opacity: 0.65
+
+    h1, h2, h3, h4
+        margin: var(--spacing-3) 0 var(--spacing-2) 0
+        color: var(--font-heading-color)
+
+    h1, h2
+        font-size: var(--font-size-5)
+        font-weight: var(--font-heading-weight)
+        font-family: var(--font-heading-font-family)
+        text-transform: uppercase
+        letter-spacing: -0.035em
+
+        &:first-child
+            margin-top: 0
+
+        &:not(:first-child)
+            padding-top: var(--spacing-3)
+
+    h3
+        font-size: var(--font-size-4)
+        font-weight: var(--font-heading-weight)
+
+    h4 
+        font-size: var(--font-size-2)
+        font-weight: var(--font-heading-weight)
+        text-transform: uppercase
+        letter-spacing: 0.07em
+        border-bottom: solid 1px var(--border-color-light)
+
+    h5
+        font-size: var(--font-size-2)
+        font-weight: var(--font-strong-weight)
+        margin: var(--spacing-2) 0 var(--spacing-0) 0
+        color: var(--font-strong-color)
+
+    h5 + *
+        margin-top: var(--spacing-0) !important
+
+    h6
+        font-size: var(--font-size-1)
+        opacity: 0.75
+        margin: var(--spacing-2) 0
+
+    h1, h2, h3, h4, h5
+        + h6
+            margin-top: calc((-1 * var(--spacing-2)) + var(--spacing-0))
+
+    // Typography
+
+    p, ul, ol, table, blockquote, pre, dl, details, div
+        line-height: var(--font-line-height)
+        margin: var(--spacing-2) 0
+
+    em
+        font-style: italic
+        font-family: var(--theme-accent-font-family)
+
+    sup, small
+        font-size: var(--font-size-1)
+        opacity: 0.75
+
+    sup
+        vertical-align: super
+        line-height: 0
+
+    sub
+        font-size: var(--font-size-3)
+
+    del
+        text-decoration: line-through
+        opacity: 0.75
+
+    a, strong
+        font-weight: var(--font-strong-weight)
+
+    strong
+        color: var(--font-strong-color)
+
+    mark
+        background-color: var(--theme-shade-1)
+        color: var(--theme-bg-color)
+        cursor: pointer
+        user-select: none
+
+    a
+        cursor: pointer
+        text-decoration: none
+        color: var(--control-primary-color)
+
+    a[href^='#']
+        border-bottom: dotted 2px var(--border-color-dark)
+
+    a[rel]
+        border-bottom: solid 2px var(--control-primary-color)
+
+    dice-roll
+        color: var(--font-heading-color)
+        border-bottom-color: var(--font-heading-color)
+
+    hr
+        border: none
+        border-bottom: solid var(--border-size) var(--border-color-dark)
+        opacity: 0.5
+        margin: var(--spacing-3) 0
+
+    img
+        margin: 0 auto
+        display: block
+        padding: var(--spacing-1)
+        border: solid 1px var(--border-color-light)
+        width: 100%
+        height: auto
+        background-color: var(--bg-color)
+
+    details-block
+        img
+            padding: 0
+            border: none
+
+    // Lists
+
+    dl
+        dt
+            float: left
+            margin-right: var(--spacing-0)
+            font-weight: var(--font-strong-weight)
+            color: var(--font-strong-color)
+        dd
+            margin: var(--spacing-0) 0
+            padding-left: var(--spacing-1)
+
+    ul, ol
+        input[type=checkbox]
+            margin-left: 0
+
+    ol
+        list-style-type: number
+        list-style-position: outside
+        margin-left: var(--spacing-2)
+        
+        li
+            margin: var(--spacing-0) 0
+    
+    ul li
+        margin: var(--spacing-0) 0
+
+    // Tables
+
+    table
+        border-collapse: collapse
+        width: 100%
+
+        th, td
+            padding: var(--spacing-0) var(--spacing-1)
+
+        th
+            color: var(--font-strong-color)
+            font-weight: var(--font-strong-weight)
+
+        td
+            background-color: var(--bg-color)
+
+        tr td
+            border-top: solid 1px var(--border-color-light)
+
+        tr:nth-child(odd) td
+            background-color: var(--block-bg-color)
+    
+    // Details
+
+    details
+        summary
+            cursor: pointer
+            font-weight: var(--font-strong-weight)
+            color: var(--font-strong-color)
+            margin: var(--spacing-2) 0
+            user-select: none
+            position: relative
+            font-size: var(--font-size-1)
+
+            hr
+                position: absolute
+                top: 50%
+                left: 0
+                right: 0
+                margin: 0 !important
+
+            span
+                position: relative
+                display: inline-block
+                padding: 0 var(--spacing-0)
+                background-color: var(--bg-color)
+                margin-left: var(--spacing-2)
+
+        summary::marker
+            display: none
+            content: ''
+
+        summary::after
+            content: '▶'
+            position: absolute
+            right: var(--spacing-2)
+            top: 0.3em
+            width: 1rem
+            height: 1rem
+            line-height: 1rem
+
+            display: flex
+            align-content: center
+            justify-content: center
+            text-indent: 0.1rem
+            font-size: 10px
+
+            color: var(--bg-color)
+            background-color: var(--font-strong-color)
+            border-radius: 100px
+            transform: rotate(0deg)
+            transition: transform 0.2s ease-in-out
+            box-shadow: 0 0 0 var(--spacing-0) var(--bg-color)
+
+    details[open] summary::after
+        transform: rotate(90deg)
+
+    details:not([open]) + hr
+        display: none
+
+    // Blocks
+
+    details-block
+        padding: 0 var(--spacing-2)
+        margin: var(--spacing-2) 0
+        position: relative
+        border: solid 1px transparent
+
+        hr
+            margin: var(--spacing-2) 0
+
+        h4:first-child 
+            border-bottom: none
+
+        &::after
+            content: ''
+            display: block
+            pointer-events: none
+            position: absolute
+            top: -1px
+            left: -1px
+            right: -1px
+            bottom: -1px
+
+        &[type=narrative]
+            background-color: var(--block-bg-color)
+            color: var(--block-font-color)
+
+            table
+                tr:nth-child(odd) td
+                    background-color: var(--bg-color)
+                tr:nth-child(even) td
+                    background-color: var(--block-bg-color)
+            
+            details
+                summary span
+                    background-color: var(--block-bg-color)
+                summary::after
+                    box-shadow: 0 0 0 var(--spacing-0) var(--block-bg-color)
+
+            &::after
+                opacity: 0.75
+                border-left: solid var(--border-vertical-width) var(--block-border-color)
+                border-right: solid var(--border-vertical-width) var(--block-border-color)
+
+        &[type=thing]
+            background-color: var(--bg-color)
+
+            &::after
+                opacity: 0.5
+                border: solid var(--border-size) var(--border-color-dark)
+                border-top: solid var(--border-horizontal-height) var(--border-color-dark)
+                border-bottom: solid var(--border-horizontal-height) var(--border-color-dark)
+
+        &[type=info]
+            background-color: var(--block-bg-color-contrast)
+            color: var(--block-font-color-contrast)
+
+            ::selection
+                background-color: var(--block-font-color-contrast)
+                color: var(--block-bg-color-contrast)
+
+            a, strong, h1, h2, h3, h4, h5, h6, dt
+                color: var(--block-font-color-contrast)
+
+            hr
+                opacity: 1
+                border-bottom-color: var(--block-border-color)
+
+            table
+                th
+                    color: var(--block-font-color-contrast)
+                tr td
+                    border-top-color: var(--block-border-color)
+                tr:nth-child(odd) td
+                    background-color: var(--block-border-color)
+                tr:nth-child(even) td
+                    background-color: var(--block-bg-color-contrast)
+
+            details
+                summary span
+                    color: var(--block-font-color-contrast)
+                    background-color: var(--block-bg-color-contrast)
+                summary::after
+                    color: var(--block-bg-color-contrast)
+                    background-color: var(--block-font-color-contrast)
+                    box-shadow: 0 0 0 var(--spacing-0) var(--block-bg-color-contrast)
+
+            dice-roll
+                color: var(--block-font-color-contrast)
+                border-bottom-color: var(--block-font-color-contrast)
+
+            &::after
+                border: solid var(--border-size) var(--block-border-color)
+                border-top: solid var(--border-horizontal-height) var(--block-border-color)
+                border-bottom: solid var(--border-horizontal-height) var(--block-border-color)
+
+    // Ability Scores
+
+    ability-scores
+        width: 100%
+
+        > span
+            flex: 1
+            text-align: center
+            
+            > span:first-child
+                font-weight: var(--font-strong-weight)
+                font-size: var(--font-size-1)
+                color: var(--font-strong-color)
