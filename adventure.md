@@ -104,7 +104,7 @@ Stylized blocks intended to convey supplementary or important information to the
 - 'thing' blocks can be used to create NPCs, items, spells, locations, etc.
 
 {{ narrative
-Travel is incredibly difficult in the deep snow. A bitter wind cuts through your clothing, and ice crystals riding the strong breeze sting your eyes.
+"Travel is incredibly difficult in the deep snow. A bitter wind cuts through your clothing, and ice crystals riding the strong breeze sting your eyes."
 }}
 
 {{ info
